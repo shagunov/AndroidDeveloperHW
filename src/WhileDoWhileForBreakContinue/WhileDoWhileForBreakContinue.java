@@ -4,13 +4,14 @@ public class WhileDoWhileForBreakContinue {
     public static void main(String[] args){
         // TODO Задание 1
         int i = 1;
-
+        System.out.print("Числа от 1 до 50, кратные 3: [");
         while (i <= 50){
             if(i % 3 == 0){
-                System.out.println(i);
+                System.out.print(i + ", ");
             }
             ++i;
         }
+        System.out.println("\b\b]");
 
         // TODO Задание 2
         int sum = 0;
