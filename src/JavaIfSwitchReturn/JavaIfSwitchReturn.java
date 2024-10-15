@@ -8,6 +8,8 @@ public class JavaIfSwitchReturn {
         // TODO: Задача 1.
         // Проверяемые переменные
         int x = 2, y = 2;
+        System.out.println("Число x: " + x);
+        System.out.println("Число y: " + y + "\n");
 
         // Вариант со вложенным if
         if(x % 2 == 0){
@@ -27,9 +29,14 @@ public class JavaIfSwitchReturn {
 
         // TODO: задача 2
         //Число для проверки
-        int day = 3;
+        int day = 10;
+        System.out.println("\nТекущий день: " + day);
 
         // Рещение включает проверку на корректность числа месяца
+        // 1-10 - первая декада
+        // 11-20 - вторая декада
+        // 21-31 - третья декада
+
         // Вариант со вложенным if
         if (day <= 31) {
             if(day >= 1){
