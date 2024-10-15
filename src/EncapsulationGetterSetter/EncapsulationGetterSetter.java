@@ -17,6 +17,7 @@ public class EncapsulationGetterSetter {
             System.out.println(gamer);
         }
 
+        // TODO решение 3-го зодания
         System.out.print("\nАктивные игроки: [");
         for (Gamer gamer : gamers){
             if(gamer.isActive()){
