@@ -17,6 +17,10 @@ public class Calculator {
     }
 
     void div(){
-        System.out.println(a / b);
+        if( b != 0){
+            System.out.println(a / b);
+        } else {
+            System.out.println("Делить на ноль нельзя");
+        }
     }
 }
