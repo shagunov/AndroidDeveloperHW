@@ -30,5 +30,7 @@ public class Sportsman {
         this.team = team;
     }
 
-
+    public void win(){
+        System.out.println("Спортсмен победил");
+    }
 }
