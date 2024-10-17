@@ -4,6 +4,7 @@ public class Sportsman {
     private String name;
     private String team;
     private int age;
+    private int winCount;
 
     public String getName() {
         return name;
@@ -15,6 +16,10 @@ public class Sportsman {
 
     public int getAge() {
         return age;
+    }
+
+    public int getWinCount() {
+        return winCount;
     }
 
     @Override
@@ -31,6 +36,7 @@ public class Sportsman {
     }
 
     public void win(){
-        System.out.println("Спортсмен победил");
+        ++winCount;
+        System.out.println("Спортсмен победил уже " + winCount + " раз");
     }
 }
