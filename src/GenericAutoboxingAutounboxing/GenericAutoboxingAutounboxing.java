@@ -15,9 +15,6 @@ public class GenericAutoboxingAutounboxing {
         Integer[] integers4 = {3,2,2,2};
         ArrayWrapper<Integer> arrayWrapper4 = new ArrayWrapper<>(integers4);
 
-        Double[] doubles = {3.0, 2.0, 2.0};
-        ArrayWrapper<Double> arrayWrapper5 = new ArrayWrapper<>(doubles);
-
         System.out.println(arrayWrapper1.isEqualTo(arrayWrapper2));
         System.out.println(arrayWrapper1.isEqualTo(arrayWrapper3));
         System.out.println(arrayWrapper1.isEqualTo(arrayWrapper4));
