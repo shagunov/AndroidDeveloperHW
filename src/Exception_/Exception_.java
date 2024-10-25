@@ -38,7 +38,7 @@ public class Exception_ {
 
     public static void checkStroke(String stroke) throws Exception{
         for(int i = 0; i < stroke.length(); ++i){
-            if(stroke.charAt(i) >= '0' || stroke.charAt(i) <= '9'){
+            if(Character.isDigit(stroke.charAt(i))){
                 throw new Exception("Найдено число в строке");
             }
         }
