@@ -2,7 +2,7 @@ package GenericAutoboxingAutounboxing;
 
 import java.util.Arrays;
 
-public class States<T extends Number> {
+public class ArrayWrapper<T extends Number> {
     private T[] values;
 
     T at(int idx){
@@ -13,7 +13,7 @@ public class States<T extends Number> {
         return values;
     }
 
-    States(T[] values){
+    ArrayWrapper(T[] values){
         this.values = values;
     }
 
@@ -48,7 +48,7 @@ public class States<T extends Number> {
         values[rhs] = tmp;
     }
 
-    public boolean isEqualTo(States<T> rhs){
+    public boolean isEqualTo(ArrayWrapper<T> rhs){
         if(this.length() != rhs.length()) return false;
         for(int i = 0; i < this.length(); ++i){
             if(!this.at(i).equals(rhs.at(i))) return false;
