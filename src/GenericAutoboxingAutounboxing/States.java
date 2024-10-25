@@ -51,7 +51,7 @@ public class States<T extends Number> {
     public boolean isEqualTo(States<T> rhs){
         if(this.length() != rhs.length()) return false;
         for(int i = 0; i < this.length(); ++i){
-            if(this.at(i).equals(rhs.at(i))) return false;
+            if(!this.at(i).equals(rhs.at(i))) return false;
         }
         return true;
     }
