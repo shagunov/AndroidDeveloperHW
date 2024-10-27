@@ -43,7 +43,7 @@ public class Person {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", gender=" + gender +
+                ", gender=" + gender.type +
                 '}';
     }
 }
