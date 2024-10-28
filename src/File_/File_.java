@@ -11,16 +11,18 @@ public class File_ {
         File file = new File("./out/production/HelloApp/File_/data.txt");
         FileWriter writer = new FileWriter(file, true);
         String stroke;
+        System.out.println("Вводите данные с консоли");
         while(true){
-            System.out.println("Вводите данные с консоли");
             stroke = scanner.nextLine();
             if (stroke.compareTo("0") == 0){
                 break;
             } else {
                 writer.write(stroke + '\n');
             }
+            System.out.println("Вводите что нибудь ещё");
         }
         writer.flush();
         writer.close();
+        scanner.close();
     }
 }
