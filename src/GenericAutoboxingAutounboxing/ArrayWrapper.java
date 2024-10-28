@@ -22,7 +22,7 @@ public class ArrayWrapper<T extends Number> {
     }
 
     void setValue(T value, int idx) throws Exception{
-        if(idx < 0 || idx > values.length){
+        if(idx < 0 || idx >= values.length){
             throw new Exception("Out of range");
         }
 
@@ -42,7 +42,10 @@ public class ArrayWrapper<T extends Number> {
         return sum / values.length;
     }
 
-    public void swap(int lhs, int rhs){
+    public void swap(int lhs, int rhs) throws Exception{
+        if(lhs < 0 || lhs > values.length || rhs < 0 || rhs > values.length){
+            throw new Exception("Out of range!!!");
+        }
         T tmp = values[lhs];
         values[lhs] = values[rhs];
         values[rhs] = tmp;

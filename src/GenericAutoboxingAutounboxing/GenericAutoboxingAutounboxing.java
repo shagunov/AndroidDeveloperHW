@@ -3,7 +3,7 @@ package GenericAutoboxingAutounboxing;
 public class GenericAutoboxingAutounboxing {
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception{
         Integer[] integers1 = {3,2,2};
         ArrayWrapper<Integer> arrayWrapper1 = new ArrayWrapper<>(integers1);
         Integer[] integers2 = {3,2,2};
