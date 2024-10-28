@@ -1,9 +1,6 @@
 package CollectionListArrayListLinkedList;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ArrayList;
+import java.util.*;
 
 public class CollectionListArrayListLinkedList {
     public static void main(String[] args){
@@ -39,21 +36,17 @@ public class CollectionListArrayListLinkedList {
     }
 
     public static List<Integer> swapBeginEnd(List<Integer> numbersList){
-        var tmp = numbersList.getLast();
-        numbersList.set(numbersList.size() - 1, numbersList.getFirst());
+        var tmp = numbersList.get(0);
+        numbersList.set(numbersList.size() - 1, numbersList.get(0));
         numbersList.set(0, tmp);
         return numbersList;
     }
 
     public static boolean isContainColor(List<String> arrayColors, String color){
-        return arrayColors.contains(color);
+        for(var color_ : arrayColors){
+            if(color_.equalsIgnoreCase(color)) return true;
+        }
+        return false;
     }
-
-    //public static boolean isContainColor(List<String> arrayColors, String color){
-    //    for(var color_ : arrayColors){
-    //        if(color_ == color) return true;
-    //    }
-    //    return false;
-    //}
 
 }
