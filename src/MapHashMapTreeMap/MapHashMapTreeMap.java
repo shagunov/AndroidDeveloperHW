@@ -20,12 +20,12 @@ public class MapHashMapTreeMap {
         return map.keySet();
     }
 
-    public static Map<String, Integer> mapTransform(Map<Integer, String> map){
-        Map<String, Integer> result = new HashMap<>();
+    public static Map<Integer, String> mapTransform(Map<Integer, String> map){
+        Map<Integer, String> result = new HashMap<>();
 
         for(var entry : map.entrySet()){
             if(entry.getValue().length() > 3){
-                result.put(entry.getValue(), entry.getKey());
+                result.put(entry.getKey(), entry.getValue());
             }
         }
 
