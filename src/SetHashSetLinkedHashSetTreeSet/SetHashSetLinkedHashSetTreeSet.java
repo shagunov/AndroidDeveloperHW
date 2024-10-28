@@ -55,13 +55,8 @@ public class SetHashSetLinkedHashSetTreeSet {
     }
 
     public static Set<String> equalElements(Set<String> lhs, Set<String> rhs){
-        Set<String> result = new HashSet<>();
-
-        for(var rhsElement : rhs){
-            if(lhs.contains(rhsElement)){
-                result.add(rhsElement);
-            }
-        }
+        Set<String> result = new HashSet<>(lhs);
+        result.retainAll(rhs);
 
         return result;
     }
