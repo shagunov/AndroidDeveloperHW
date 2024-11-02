@@ -2,28 +2,30 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Module1/1.JavaIfSwitchReturn/1.1.JavaIfSwitchReturn.iml" filepath="$PROJECT_DIR$/Module1/1.JavaIfSwitchReturn/1.1.JavaIfSwitchReturn.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module1/2.WhileDoWhileForBreakContinue/1.2.WhileDoWhileForBreakContinue.iml" filepath="$PROJECT_DIR$/Module1/2.WhileDoWhileForBreakContinue/1.2.WhileDoWhileForBreakContinue.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module1/3.ClassMembersConstructorsMethods/1.3.ClassMembersConstructorsMethods.iml" filepath="$PROJECT_DIR$/Module1/3.ClassMembersConstructorsMethods/1.3.ClassMembersConstructorsMethods.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module1/4.Array/1.4.Array.iml" filepath="$PROJECT_DIR$/Module1/4.Array/1.4.Array.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module1/5.String/1.5.String.iml" filepath="$PROJECT_DIR$/Module1/5.String/1.5.String.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module1/6.EncapsulationGetterSetter/1.6.EncapsulationGetterSetter.iml" filepath="$PROJECT_DIR$/Module1/6.EncapsulationGetterSetter/1.6.EncapsulationGetterSetter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/1.Inheritance/2.1.Inheritance.iml" filepath="$PROJECT_DIR$/Module2/1.Inheritance/2.1.Inheritance.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/10.MapHashMapTreeMap/2.10.MapHashMapTreeMap.iml" filepath="$PROJECT_DIR$/Module2/10.MapHashMapTreeMap/2.10.MapHashMapTreeMap.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/11.Enum/2.11.Enum.iml" filepath="$PROJECT_DIR$/Module2/11.Enum/2.11.Enum.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/12.AnonymeClass/2.12.AnonymeClass.iml" filepath="$PROJECT_DIR$/Module2/12.AnonymeClass/2.12.AnonymeClass.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/13.Lambda/2.13.Lambda.iml" filepath="$PROJECT_DIR$/Module2/13.Lambda/2.13.Lambda.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/14.StreamAPI_1/2.14.StreamAPI_1.iml" filepath="$PROJECT_DIR$/Module2/14.StreamAPI_1/2.14.StreamAPI_1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/15.StreamAPI_2/2.15.StreamAPI_2.iml" filepath="$PROJECT_DIR$/Module2/15.StreamAPI_2/2.15.StreamAPI_2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/16.Debugger/2.16.Debugger.iml" filepath="$PROJECT_DIR$/Module2/16.Debugger/2.16.Debugger.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/2.Abstraction/2.2.Abstraction.iml" filepath="$PROJECT_DIR$/Module2/2.Abstraction/2.2.Abstraction.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/3.Interfaces/2.3.Interfaces.iml" filepath="$PROJECT_DIR$/Module2/3.Interfaces/2.3.Interfaces.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/4.NestedInner/2.4.NestedInner.iml" filepath="$PROJECT_DIR$/Module2/4.NestedInner/2.4.NestedInner.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/5.Exception/2.5.Exception.iml" filepath="$PROJECT_DIR$/Module2/5.Exception/2.5.Exception.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/6.File/2.6.File.iml" filepath="$PROJECT_DIR$/Module2/6.File/2.6.File.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/7.GenericAutoboxingAutounboxing/2.7.GenericAutoboxingAutounboxing.iml" filepath="$PROJECT_DIR$/Module2/7.GenericAutoboxingAutounboxing/2.7.GenericAutoboxingAutounboxing.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/8.CollectionListArrayListLinkedList/2.8.CollectionListArrayListLinkedList.iml" filepath="$PROJECT_DIR$/Module2/8.CollectionListArrayListLinkedList/2.8.CollectionListArrayListLinkedList.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module2/9.SetHashSetLinkedHashSetTreeSet/2.9.SetHashSetLinkedHashSetTreeSet.iml" filepath="$PROJECT_DIR$/Module2/9.SetHashSetLinkedHashSetTreeSet/2.9.SetHashSetLinkedHashSetTreeSet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module0/0.1.IntelijIDE/0.1.IntelijIDE.iml" filepath="$PROJECT_DIR$/Module0/0.1.IntelijIDE/0.1.IntelijIDE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module0/0.2.VariablesDataTypesOperators/0.2.VariablesDataTypesOperators.iml" filepath="$PROJECT_DIR$/Module0/0.2.VariablesDataTypesOperators/0.2.VariablesDataTypesOperators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module1/1.1.JavaIfSwitchReturn/1.1.JavaIfSwitchReturn.iml" filepath="$PROJECT_DIR$/Module1/1.1.JavaIfSwitchReturn/1.1.JavaIfSwitchReturn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module1/1.2.WhileDoWhileForBreakContinue/1.2.WhileDoWhileForBreakContinue.iml" filepath="$PROJECT_DIR$/Module1/1.2.WhileDoWhileForBreakContinue/1.2.WhileDoWhileForBreakContinue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module1/1.3.ClassMembersConstructorsMethods/1.3.ClassMembersConstructorsMethods.iml" filepath="$PROJECT_DIR$/Module1/1.3.ClassMembersConstructorsMethods/1.3.ClassMembersConstructorsMethods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module1/1.4.Array/1.4.Array.iml" filepath="$PROJECT_DIR$/Module1/1.4.Array/1.4.Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module1/1.5.String/1.5.String.iml" filepath="$PROJECT_DIR$/Module1/1.5.String/1.5.String.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module1/1.6.EncapsulationGetterSetter/1.6.EncapsulationGetterSetter.iml" filepath="$PROJECT_DIR$/Module1/1.6.EncapsulationGetterSetter/1.6.EncapsulationGetterSetter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/2.1.Inheritance/2.1.Inheritance.iml" filepath="$PROJECT_DIR$/Module2/2.1.Inheritance/2.1.Inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/2.10.MapHashMapTreeMap/2.10.MapHashMapTreeMap.iml" filepath="$PROJECT_DIR$/Module2/2.10.MapHashMapTreeMap/2.10.MapHashMapTreeMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/2.11.Enum/2.11.Enum.iml" filepath="$PROJECT_DIR$/Module2/2.11.Enum/2.11.Enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/2.12.AnonymeClass/2.12.AnonymeClass.iml" filepath="$PROJECT_DIR$/Module2/2.12.AnonymeClass/2.12.AnonymeClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/2.13.Lambda/2.13.Lambda.iml" filepath="$PROJECT_DIR$/Module2/2.13.Lambda/2.13.Lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/2.14.StreamAPI_1/2.14.StreamAPI_1.iml" filepath="$PROJECT_DIR$/Module2/2.14.StreamAPI_1/2.14.StreamAPI_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/2.15.StreamAPI_2/2.15.StreamAPI_2.iml" filepath="$PROJECT_DIR$/Module2/2.15.StreamAPI_2/2.15.StreamAPI_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/2.16.Debugger/2.16.Debugger.iml" filepath="$PROJECT_DIR$/Module2/2.16.Debugger/2.16.Debugger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/2.2.Abstraction/2.2.Abstraction.iml" filepath="$PROJECT_DIR$/Module2/2.2.Abstraction/2.2.Abstraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/2.3.Interfaces/2.3.Interfaces.iml" filepath="$PROJECT_DIR$/Module2/2.3.Interfaces/2.3.Interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/2.4.NestedInner/2.4.NestedInner.iml" filepath="$PROJECT_DIR$/Module2/2.4.NestedInner/2.4.NestedInner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/2.5.Exception/2.5.Exception.iml" filepath="$PROJECT_DIR$/Module2/2.5.Exception/2.5.Exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/2.6.File/2.6.File.iml" filepath="$PROJECT_DIR$/Module2/2.6.File/2.6.File.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/2.7.GenericAutoboxingAutounboxing/2.7.GenericAutoboxingAutounboxing.iml" filepath="$PROJECT_DIR$/Module2/2.7.GenericAutoboxingAutounboxing/2.7.GenericAutoboxingAutounboxing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/2.8.CollectionListArrayListLinkedList/2.8.CollectionListArrayListLinkedList.iml" filepath="$PROJECT_DIR$/Module2/2.8.CollectionListArrayListLinkedList/2.8.CollectionListArrayListLinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module2/2.9.SetHashSetLinkedHashSetTreeSet/2.9.SetHashSetLinkedHashSetTreeSet.iml" filepath="$PROJECT_DIR$/Module2/2.9.SetHashSetLinkedHashSetTreeSet/2.9.SetHashSetLinkedHashSetTreeSet.iml" />
     </modules>
   </component>
 </project>
