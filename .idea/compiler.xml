@@ -9,7 +9,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="1.1.JavaIfSwitchReturn" target="23" />
+      <module name="Module1.1JavaIfSwitchReturn" target="23" />
     </bytecodeTargetLevel>
   </component>
 </project>
