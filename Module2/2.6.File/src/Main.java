@@ -30,13 +30,16 @@ public class Main {
 
         if (!file.exists()){
             var fileName = file.getName();
-            System.out.println(fileName);
             var filePathStrings = new Stack<String>();
-            File dirFile = null;
 
+            File dirFile = null;
             for(dirFile = file.getParentFile(); !dirFile.exists(); dirFile = dirFile.getParentFile()) {
                 filePathStrings.push(dirFile.getName());
-            } File file1 = dirFile;
+            }
+            if(!dirFile.isDirectory()) throw new IOException("Directory file is not a Directory");
+
+            File file1 = dirFile;
+
             while(!filePathStrings.empty()){
                 file1 = new File(file1, filePathStrings.pop());
                 if(!file1.mkdir()) throw new IOException("Cannot create dir");
