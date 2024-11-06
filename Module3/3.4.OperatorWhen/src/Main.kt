@@ -25,15 +25,15 @@ fun main() {
 
     println("\nApproximated c = $c: cApproximate = $cApproximate\n")
 
-    val oclock = 15
+    val `o'clock` = 15
 
     when{
-        (oclock >= 0 && oclock < 3 || oclock == 23) -> println("Ночь")
-        (oclock >= 3 && oclock < 7) -> println("Раннее утро")
-        (oclock >= 7 && oclock < 11) -> println("Утро")
-        (oclock >= 11 && oclock < 16) -> println("День")
-        (oclock >= 16 && oclock < 20) -> println("Вечер")
-        (oclock >= 20 && oclock < 23) -> println("Поздний вечер")
+        (`o'clock` >= 0 && `o'clock` < 3 || `o'clock` == 23) -> println("Ночь")
+        (`o'clock` >= 3 && `o'clock` < 7) -> println("Раннее утро")
+        (`o'clock` >= 7 && `o'clock` < 11) -> println("Утро")
+        (`o'clock` >= 11 && `o'clock` < 16) -> println("День")
+        (`o'clock` >= 16 && `o'clock` < 20) -> println("Вечер")
+        (`o'clock` >= 20 && `o'clock` < 23) -> println("Поздний вечер")
         else -> println("Неправильно введён номер часа. Невозможно определить время суток")
     }
 
