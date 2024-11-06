@@ -28,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module2/2.9.SetHashSetLinkedHashSetTreeSet/Module2.9SetHashSetLinkedHashSetTreeSet.iml" filepath="$PROJECT_DIR$/Module2/2.9.SetHashSetLinkedHashSetTreeSet/Module2.9SetHashSetLinkedHashSetTreeSet.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module3/3.1.Variables/Module3.1Variables.iml" filepath="$PROJECT_DIR$/Module3/3.1.Variables/Module3.1Variables.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module3/3.2.KotlinsOperators/Module3.2KotlinsOperators.iml" filepath="$PROJECT_DIR$/Module3/3.2.KotlinsOperators/Module3.2KotlinsOperators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module3/3.3.OperatorIf/Module3.3OperatorIf.iml" filepath="$PROJECT_DIR$/Module3/3.3.OperatorIf/Module3.3OperatorIf.iml" />
     </modules>
   </component>
 </project>
