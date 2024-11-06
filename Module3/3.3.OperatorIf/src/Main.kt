@@ -70,7 +70,7 @@ fun main(){
         result = 0.0
     }
 
-    if(operationString != "" && result != 0.0) println("$operationString чисел $num1 и $num2: $result")
+    if(operationString != "") println("$operationString чисел $num1 и $num2: $result")
     else println("Операция присвоена с ошибкой")
 
 }
