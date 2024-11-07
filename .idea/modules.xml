@@ -30,6 +30,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module3/3.2.KotlinsOperators/Module3.2KotlinsOperators.iml" filepath="$PROJECT_DIR$/Module3/3.2.KotlinsOperators/Module3.2KotlinsOperators.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module3/3.3.OperatorIf/Module3.3OperatorIf.iml" filepath="$PROJECT_DIR$/Module3/3.3.OperatorIf/Module3.3OperatorIf.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module3/3.4.OperatorWhen/Module3.4OperatorWhen.iml" filepath="$PROJECT_DIR$/Module3/3.4.OperatorWhen/Module3.4OperatorWhen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module3/3.5.OperatorWhileDoWhile/Module3.5OperatorWhileDoWhile.iml" filepath="$PROJECT_DIR$/Module3/3.5.OperatorWhileDoWhile/Module3.5OperatorWhileDoWhile.iml" />
     </modules>
   </component>
 </project>
