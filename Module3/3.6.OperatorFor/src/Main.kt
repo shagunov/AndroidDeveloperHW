@@ -1,5 +1,4 @@
 import kotlin.math.abs
-import kotlin.math.pow
 import kotlin.math.sqrt
 
 const val pi = 3.14
@@ -24,9 +23,10 @@ fun main() {
 
     println("Прямоульник с координатами противоположных вершин: {$x1; $y1}, {$x2; $y2} имеет площадь ${abs(x2 - x1) * abs(y2 - y1)} и периметр ${(abs(x2 - x1) + abs(y2 - y1)) * 2}\n")
 
-    val powBasic = 2.0
+    var number = 1
     for(counter in 0..9){
-        println(powBasic.pow(counter).toInt())
+        println(number)
+        number *= 2
     }
 
     println()
