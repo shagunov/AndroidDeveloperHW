@@ -31,6 +31,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module3/3.3.OperatorIf/Module3.3OperatorIf.iml" filepath="$PROJECT_DIR$/Module3/3.3.OperatorIf/Module3.3OperatorIf.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module3/3.4.OperatorWhen/Module3.4OperatorWhen.iml" filepath="$PROJECT_DIR$/Module3/3.4.OperatorWhen/Module3.4OperatorWhen.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module3/3.5.OperatorWhileDoWhile/Module3.5OperatorWhileDoWhile.iml" filepath="$PROJECT_DIR$/Module3/3.5.OperatorWhileDoWhile/Module3.5OperatorWhileDoWhile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module3/3.6.OperatorFor/Module3.6OperatorFor.iml" filepath="$PROJECT_DIR$/Module3/3.6.OperatorFor/Module3.6OperatorFor.iml" />
     </modules>
   </component>
 </project>

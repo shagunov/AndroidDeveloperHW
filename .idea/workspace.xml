@@ -7,7 +7,7 @@
     <list default="true" id="150aab85-7022-4bbb-9461-b5b4f0a3e6a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module3/3.4.OperatorWhen/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Module3/3.4.OperatorWhen/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/3.6.OperatorFor/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Module3/3.6.OperatorFor/src/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,18 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "shagunov"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;shagunov&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/shagunov/AndroidDeveloperHW.git",
-    "accountId": "a656918f-11ec-41cf-86af-d4dfcd19a77c"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/shagunov/AndroidDeveloperHW.git&quot;,
+    &quot;accountId&quot;: &quot;a656918f-11ec-41cf-86af-d4dfcd19a77c&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -78,6 +78,7 @@
     "Kotlin.MainKt (2).executor": "Run",
     "Kotlin.MainKt (3).executor": "Run",
     "Kotlin.MainKt (4).executor": "Run",
+    "Kotlin.MainKt (5).executor": "Run",
     "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -85,7 +86,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-23",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Users/Shagu/Projects/AndroidDeveloperHW/Module3/3.5.OperatorWhileDoWhile",
+    "last_opened_file_path": "E:/Users/Shagu/Projects/AndroidDeveloperHW/Module3",
     "onboarding.tips.debug.path": "C:/Users/Shagu/IdeaProjects/AndroidDeveloperHW/Module2/16.Debugger/src/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -99,7 +100,7 @@
       <recent name="C:\Users\Shagu\IdeaProjects\AndroidDeveloperHW\Module1\Array\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt (4)">
+  <component name="RunManager" selected="Kotlin.MainKt (5)">
     <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="Module3.2KotlinsOperators" />
@@ -128,20 +129,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="MainKt (5)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Module3.1Variables" />
+      <module name="Module3.6OperatorFor" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt (5)" />
         <item itemvalue="Kotlin.MainKt (4)" />
         <item itemvalue="Kotlin.MainKt (3)" />
         <item itemvalue="Kotlin.MainKt (2)" />
         <item itemvalue="Kotlin.MainKt (1)" />
-        <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
   </component>
