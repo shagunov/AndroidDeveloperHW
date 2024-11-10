@@ -33,6 +33,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module3/3.5.OperatorWhileDoWhile/Module3.5OperatorWhileDoWhile.iml" filepath="$PROJECT_DIR$/Module3/3.5.OperatorWhileDoWhile/Module3.5OperatorWhileDoWhile.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module3/3.6.OperatorFor/Module3.6OperatorFor.iml" filepath="$PROJECT_DIR$/Module3/3.6.OperatorFor/Module3.6OperatorFor.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module3/3.7.BreakContinue/Module3.7BreakContinue.iml" filepath="$PROJECT_DIR$/Module3/3.7.BreakContinue/Module3.7BreakContinue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module3/3.8.Arrays/Module3.8Arrays.iml" filepath="$PROJECT_DIR$/Module3/3.8.Arrays/Module3.8Arrays.iml" />
     </modules>
   </component>
 </project>
