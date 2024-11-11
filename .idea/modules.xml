@@ -34,6 +34,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module3/3.6.OperatorFor/Module3.6OperatorFor.iml" filepath="$PROJECT_DIR$/Module3/3.6.OperatorFor/Module3.6OperatorFor.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module3/3.7.BreakContinue/Module3.7BreakContinue.iml" filepath="$PROJECT_DIR$/Module3/3.7.BreakContinue/Module3.7BreakContinue.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module3/3.8.Arrays/Module3.8Arrays.iml" filepath="$PROJECT_DIR$/Module3/3.8.Arrays/Module3.8Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module3/3.9.MultidimentionalArrays/Module3.9MultidimentionalArrays.iml" filepath="$PROJECT_DIR$/Module3/3.9.MultidimentionalArrays/Module3.9MultidimentionalArrays.iml" />
     </modules>
   </component>
 </project>
