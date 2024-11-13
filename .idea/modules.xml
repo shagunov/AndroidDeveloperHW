@@ -26,7 +26,6 @@
       <module fileurl="file://$PROJECT_DIR$/Module2/2.7.GenericAutoboxingAutounboxing/Module2.7GenericAutoboxingAutounboxing.iml" filepath="$PROJECT_DIR$/Module2/2.7.GenericAutoboxingAutounboxing/Module2.7GenericAutoboxingAutounboxing.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module2/2.8.CollectionListArrayListLinkedList/Module2.8CollectionListArrayListLinkedList.iml" filepath="$PROJECT_DIR$/Module2/2.8.CollectionListArrayListLinkedList/Module2.8CollectionListArrayListLinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module2/2.9.SetHashSetLinkedHashSetTreeSet/Module2.9SetHashSetLinkedHashSetTreeSet.iml" filepath="$PROJECT_DIR$/Module2/2.9.SetHashSetLinkedHashSetTreeSet/Module2.9SetHashSetLinkedHashSetTreeSet.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Module3/3.10.Functions/Module3.10Functions.iml" filepath="$PROJECT_DIR$/Module3/3.10.Functions/Module3.10Functions.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module3/3.1.Variables/Module3.1Variables.iml" filepath="$PROJECT_DIR$/Module3/3.1.Variables/Module3.1Variables.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module3/3.2.KotlinsOperators/Module3.2KotlinsOperators.iml" filepath="$PROJECT_DIR$/Module3/3.2.KotlinsOperators/Module3.2KotlinsOperators.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module3/3.3.OperatorIf/Module3.3OperatorIf.iml" filepath="$PROJECT_DIR$/Module3/3.3.OperatorIf/Module3.3OperatorIf.iml" />
@@ -36,6 +35,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module3/3.7.BreakContinue/Module3.7BreakContinue.iml" filepath="$PROJECT_DIR$/Module3/3.7.BreakContinue/Module3.7BreakContinue.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module3/3.8.Arrays/Module3.8Arrays.iml" filepath="$PROJECT_DIR$/Module3/3.8.Arrays/Module3.8Arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module3/3.9.MultidimentionalArrays/Module3.9MultidimentionalArrays.iml" filepath="$PROJECT_DIR$/Module3/3.9.MultidimentionalArrays/Module3.9MultidimentionalArrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module4/4.1.Functions/Module4.1Functions.iml" filepath="$PROJECT_DIR$/Module4/4.1.Functions/Module4.1Functions.iml" />
     </modules>
   </component>
 </project>

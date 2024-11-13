@@ -5,33 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="150aab85-7022-4bbb-9461-b5b4f0a3e6a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module0/0.1.IntelijIDE/Module0.1IntelijIDE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module0/0.1.IntelijIDE/Module0.1IntelijIDE.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module0/0.2.VariablesDataTypesOperators/Module0.2VariablesDataTypesOperators.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module0/0.2.VariablesDataTypesOperators/Module0.2VariablesDataTypesOperators.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module1/1.1.JavaIfSwitchReturn/Module1.1JavaIfSwitchReturn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/1.1.JavaIfSwitchReturn/Module1.1JavaIfSwitchReturn.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module1/1.2.WhileDoWhileForBreakContinue/Module1.2WhileDoWhileForBreakContinue.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/1.2.WhileDoWhileForBreakContinue/Module1.2WhileDoWhileForBreakContinue.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module1/1.3.ClassMembersConstructorsMethods/Module1.3ClassMembersConstructorsMethods.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/1.3.ClassMembersConstructorsMethods/Module1.3ClassMembersConstructorsMethods.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module1/1.4.Array/Module1.4Array.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/1.4.Array/Module1.4Array.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module1/1.5.String/Module1.5String.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/1.5.String/Module1.5String.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module1/1.6.EncapsulationGetterSetter/Module1.6EncapsulationGetterSetter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/1.6.EncapsulationGetterSetter/Module1.6EncapsulationGetterSetter.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/2.1.Inheritance/Module2.1Inheritance.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.1.Inheritance/Module2.1Inheritance.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/2.10.MapHashMapTreeMap/Module2.10MapHashMapTreeMap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.10.MapHashMapTreeMap/Module2.10MapHashMapTreeMap.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/2.11.Enum/Module2.11Enum.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.11.Enum/Module2.11Enum.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/2.12.AnonymeClass/Module2.12AnonymeClass.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.12.AnonymeClass/Module2.12AnonymeClass.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/2.13.Lambda/Module2.13Lambda.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.13.Lambda/Module2.13Lambda.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/2.14.StreamAPI_1/Module2.14StreamAPI_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.14.StreamAPI_1/Module2.14StreamAPI_1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/2.15.StreamAPI_2/Module2.15StreamAPI_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.15.StreamAPI_2/Module2.15StreamAPI_2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/2.16.Debugger/Module2.16Debugger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.16.Debugger/Module2.16Debugger.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/2.2.Abstraction/Module2.2Abstraction.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.2.Abstraction/Module2.2Abstraction.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/2.3.Interfaces/Module2.3Interfaces.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.3.Interfaces/Module2.3Interfaces.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/2.4.NestedInner/Module2.4NestedInner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.4.NestedInner/Module2.4NestedInner.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/2.5.Exception/Module2.5Exception.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.5.Exception/Module2.5Exception.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/2.6.File/Module2.6File.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.6.File/Module2.6File.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/2.7.GenericAutoboxingAutounboxing/Module2.7GenericAutoboxingAutounboxing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.7.GenericAutoboxingAutounboxing/Module2.7GenericAutoboxingAutounboxing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/2.8.CollectionListArrayListLinkedList/Module2.8CollectionListArrayListLinkedList.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.8.CollectionListArrayListLinkedList/Module2.8CollectionListArrayListLinkedList.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/2.9.SetHashSetLinkedHashSetTreeSet/Module2.9SetHashSetLinkedHashSetTreeSet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.9.SetHashSetLinkedHashSetTreeSet/Module2.9SetHashSetLinkedHashSetTreeSet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/3.10.Functions/Module3.10Functions.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/3.10.Functions/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Module4/4.1.Functions/src/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,54 +48,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AnonymeClass.executor": "Run",
-    "Application.Array.executor": "Run",
-    "Application.ClassMembersConstructorsMethods.executor": "Run",
-    "Application.CollectionListArrayListLinkedList.executor": "Run",
-    "Application.Debugger.executor": "Run",
-    "Application.Enum_.executor": "Debug",
-    "Application.Exception_.executor": "Run",
-    "Application.File_.executor": "Run",
-    "Application.GenericAutoboxingAutounboxing.executor": "Run",
-    "Application.Inheritance.executor": "Run",
-    "Application.Interfaces.executor": "Run",
-    "Application.JavaIfSwitchReturn.executor": "Run",
-    "Application.Lambda.executor": "Run",
-    "Application.Main (1).executor": "Run",
-    "Application.Main (2).executor": "Run",
-    "Application.Main (3).executor": "Run",
-    "Application.Main (4).executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MapHashMapTreeMap.executor": "Run",
-    "Application.NestedInner.executor": "Run",
-    "Application.SetHashSetLinkedHashSetTreeSet.executor": "Run",
-    "Application.StreamAPII.executor": "Run",
-    "Application.StreamAPI_2.executor": "Run",
-    "Application.WhileDoWhileForBreakContinue.executor": "Run",
-    "Kotlin.MainKt (1).executor": "Run",
-    "Kotlin.MainKt (2).executor": "Run",
-    "Kotlin.MainKt (3).executor": "Run",
-    "Kotlin.MainKt (4).executor": "Run",
-    "Kotlin.MainKt (5).executor": "Run",
-    "Kotlin.MainKt.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-23",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Users/Shagu/Projects/AndroidDeveloperHW/Module3/3.10.Functions",
-    "onboarding.tips.debug.path": "C:/Users/Shagu/IdeaProjects/AndroidDeveloperHW/Module2/16.Debugger/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "advanced.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AnonymeClass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Array.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ClassMembersConstructorsMethods.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CollectionListArrayListLinkedList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Debugger.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Enum_.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Exception_.executor&quot;: &quot;Run&quot;,
+    &quot;Application.File_.executor&quot;: &quot;Run&quot;,
+    &quot;Application.GenericAutoboxingAutounboxing.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Inheritance.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Interfaces.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JavaIfSwitchReturn.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Lambda.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main (2).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main (3).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main (4).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MapHashMapTreeMap.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NestedInner.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SetHashSetLinkedHashSetTreeSet.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StreamAPII.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StreamAPI_2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WhileDoWhileForBreakContinue.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt (1).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt (2).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt (3).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt (4).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt (5).executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-23&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Users/Shagu/Projects/AndroidDeveloperHW/Module3/3.10.Functions&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Shagu/IdeaProjects/AndroidDeveloperHW/Module2/16.Debugger/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Users\Shagu\Projects\AndroidDeveloperHW\Module4" />
       <recent name="C:\Users\Shagu\IdeaProjects\AndroidDeveloperHW\Module3\3.1.Variables\src" />
       <recent name="C:\Users\Shagu\IdeaProjects\AndroidDeveloperHW\Module1\Array\src" />
     </key>
@@ -141,7 +118,7 @@
     </configuration>
     <configuration name="MainKt (3)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Module3.10Functions" />
+      <module name="Module4.1Functions" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
