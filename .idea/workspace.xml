@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="150aab85-7022-4bbb-9461-b5b4f0a3e6a5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module3/3.10.Functions/Module3.10Functions.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module3/3.10.Functions/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Module4/4.1.Functions/src/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +85,8 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-23&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Users/Shagu/Projects/AndroidDeveloperHW/Module3/3.10.Functions&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Shagu/IdeaProjects/AndroidDeveloperHW/Module2/16.Debugger/src/Main.java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Users/Shagu/Projects/AndroidDeveloperHW/Module4&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;E:/Users/Shagu/Projects/AndroidDeveloperHW/Module4/4.2.OperatorReturn/src/Main.kt&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -101,7 +100,7 @@
       <recent name="C:\Users\Shagu\IdeaProjects\AndroidDeveloperHW\Module1\Array\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt (3)">
+  <component name="RunManager" selected="Kotlin.MainKt (4)">
     <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="Module3.8Arrays" />
@@ -123,9 +122,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt (5)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="MainKt (4)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Module3.6OperatorFor" />
+      <module name="Module4.2OperatorReturn" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt (4)" />
         <item itemvalue="Kotlin.MainKt (3)" />
         <item itemvalue="Kotlin.MainKt (2)" />
         <item itemvalue="Kotlin.MainKt (1)" />
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Kotlin.MainKt (5)" />
       </list>
     </recent_temporary>
   </component>
