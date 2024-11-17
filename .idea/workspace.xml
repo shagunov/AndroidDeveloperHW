@@ -8,6 +8,7 @@
       <change afterPath="$PROJECT_DIR$/Module4/4.5.ClassConstructors/Module4.5ClassConstructors.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module4/4.5.ClassConstructors/src/Box.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Module4/4.5.ClassConstructors/src/Car.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module4/4.5.ClassConstructors/src/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
