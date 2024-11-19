@@ -40,6 +40,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module4/4.3.ClassClassMembers/Module4.3ClassClassMembers.iml" filepath="$PROJECT_DIR$/Module4/4.3.ClassClassMembers/Module4.3ClassClassMembers.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module4/4.4.AccessModificators/Module4.4AccessModificators.iml" filepath="$PROJECT_DIR$/Module4/4.4.AccessModificators/Module4.4AccessModificators.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module4/4.5.ClassConstructors/Module4.5ClassConstructors.iml" filepath="$PROJECT_DIR$/Module4/4.5.ClassConstructors/Module4.5ClassConstructors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module4/4.6.GetterSetterIncapsulation/Module4.6GetterSetterIncapsulation.iml" filepath="$PROJECT_DIR$/Module4/4.6.GetterSetterIncapsulation/Module4.6GetterSetterIncapsulation.iml" />
     </modules>
   </component>
 </project>
