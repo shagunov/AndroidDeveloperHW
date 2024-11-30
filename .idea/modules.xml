@@ -42,6 +42,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module4/4.5.ClassConstructors/Module4.5ClassConstructors.iml" filepath="$PROJECT_DIR$/Module4/4.5.ClassConstructors/Module4.5ClassConstructors.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module4/4.6.GetterSetterIncapsulation/Module4.6GetterSetterIncapsulation.iml" filepath="$PROJECT_DIR$/Module4/4.6.GetterSetterIncapsulation/Module4.6GetterSetterIncapsulation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module4/4.7.Inheritance/Module4.7Inheritance.iml" filepath="$PROJECT_DIR$/Module4/4.7.Inheritance/Module4.7Inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module4/4.8.AbstractionClasses/Module4.8AbstractionClasses.iml" filepath="$PROJECT_DIR$/Module4/4.8.AbstractionClasses/Module4.8AbstractionClasses.iml" />
     </modules>
   </component>
 </project>
