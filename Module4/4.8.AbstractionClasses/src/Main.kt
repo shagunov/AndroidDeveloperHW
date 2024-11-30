@@ -31,5 +31,6 @@ fun main() {
         3 -> println("Длина отрезка: $lengthMeters метров")
         4 -> println("Длина отрезка: ${lengthMeters * 1000} милиметров")
         5 -> println("Длина отрезка: ${lengthMeters * 100} сантиметров")
+        else -> println("Неверный номер для единицы длины")
     }
 }
