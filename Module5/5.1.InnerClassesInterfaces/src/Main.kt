@@ -10,9 +10,7 @@ fun main() {
         println("Введите строку для поиска")
         val searchString = readln()
         if(searchString == "exit") break
-        for(element in array) {
-            if(element.contains(searchString)) result.add(element)
-        }
+        for(element in array) if(element.contains(searchString)) result.add(element)
         println("Найденные фамилии: $result")
         result.clear()
     }
