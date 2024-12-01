@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="150aab85-7022-4bbb-9461-b5b4f0a3e6a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Module4/4.10.OverridingMethodsProperties/Module4.10OverridingMethodsProperties.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module4/4.10.OverridingMethodsProperties/src/Bird.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module5/5.1.InnerClassesInterfaces/Module5.1InnerClassesInterfaces.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module5/5.1.InnerClassesInterfaces/src/Human.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -87,8 +87,8 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-23&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Users/Shagu/Projects/AndroidDeveloperHW/Module4&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;E:/Users/Shagu/Projects/AndroidDeveloperHW/Module4/4.10.OverridingMethodsProperties/src/Main.kt&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Users/Shagu/Projects/AndroidDeveloperHW/Module5&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;E:/Users/Shagu/Projects/AndroidDeveloperHW/Module5/InnerClassesInterfaces/src/Main.kt&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -102,7 +102,7 @@
       <recent name="C:\Users\Shagu\IdeaProjects\AndroidDeveloperHW\Module1\Array\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt (2)">
+  <component name="RunManager" selected="Kotlin.MainKt (3)">
     <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="Module4.9Interfaces" />
@@ -117,9 +117,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt (4)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="MainKt (3)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Module4.6GetterSetterIncapsulation" />
+      <module name="Module5.1InnerClassesInterfaces" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt (3)" />
         <item itemvalue="Kotlin.MainKt (2)" />
         <item itemvalue="Kotlin.MainKt (1)" />
         <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.MainKt (5)" />
-        <item itemvalue="Kotlin.MainKt (4)" />
       </list>
     </recent_temporary>
   </component>
