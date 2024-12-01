@@ -10,51 +10,10 @@ fun main() {
         println("Введите строку для поиска")
         val searchString = readln()
         if(searchString == "exit") break
-        for(element in array){
-            var elementOutStr = ""
-            var isMatched = false
-            var curSearchStringCharIndex = 0
-            var matchString = ""
-            var nonMatchString = ""
-            var isFound = false
-            for(char in element){
-                if(curSearchStringCharIndex == searchString.length - 1){
-                    curSearchStringCharIndex = 0
-                } else if(isMatched){
-                    curSearchStringCharIndex++
-                }
-
-                if(char == searchString[curSearchStringCharIndex] && !isMatched){
-                    matchString += "["
-                    isMatched = true
-                }
-                if(char != searchString[curSearchStringCharIndex] && isMatched) {
-                    isMatched = false
-                    matchString += "]"
-
-                    if(curSearchStringCharIndex != 0){
-                        elementOutStr += nonMatchString
-                    }
-                    else {
-                        elementOutStr += matchString
-                        isFound = true
-                    }
-
-                    matchString = ""
-                    nonMatchString = ""
-                    curSearchStringCharIndex = 0
-                }
-
-                if(!isMatched) elementOutStr += char
-                else {
-                    nonMatchString += char
-                    matchString += char
-                }
-            }
-            if(isMatched) elementOutStr += "$matchString]"
-            if(isFound) result.add(elementOutStr)
+        for(element in array) {
+            if(element.contains(searchString)) result.add(element)
         }
-        println(result.toString())
+        println("Найденные фамилии: $result")
         result.clear()
     }
 
