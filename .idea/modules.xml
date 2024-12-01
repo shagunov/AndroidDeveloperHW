@@ -46,6 +46,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module4/4.8.AbstractionClasses/Module4.8AbstractionClasses.iml" filepath="$PROJECT_DIR$/Module4/4.8.AbstractionClasses/Module4.8AbstractionClasses.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module4/4.9.Interfaces/Module4.9Interfaces.iml" filepath="$PROJECT_DIR$/Module4/4.9.Interfaces/Module4.9Interfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module5/5.1.InnerClassesInterfaces/Module5.1InnerClassesInterfaces.iml" filepath="$PROJECT_DIR$/Module5/5.1.InnerClassesInterfaces/Module5.1InnerClassesInterfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module5/5.2.DataClasses/Module5.2DataClasses.iml" filepath="$PROJECT_DIR$/Module5/5.2.DataClasses/Module5.2DataClasses.iml" />
     </modules>
   </component>
 </project>
