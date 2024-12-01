@@ -1,8 +1,8 @@
 class Human {
-    val leg = Leg()
-    val head = Head()
-    val arm = Arm()
-    val body = Body()
+    private val leg = Leg()
+    private val head = Head()
+    private val arm = Arm()
+    private val body = Body()
 
     fun standUp(){
         println("Человек встаёт")
@@ -13,23 +13,23 @@ class Human {
         println("Человек стоит.")
     }
 
-    class Leg{
+    inner class Leg{
         fun raise(){
             println("\tНога поднимается.")
         }
     }
-    class Head{
+    inner class Head{
         fun rotate(){
             println("\tГолова поворачивается.")
         }
 
     }
-    class Arm{
+    inner class Arm{
         fun omit(){
             println("\tРука опущена вниз.")
         }
     }
-    class Body{
+    inner class Body{
         fun banding(){
             println("\tТуловище наклоняется вперёд.")
         }

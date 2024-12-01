@@ -58,6 +58,7 @@ fun main() {
         result.clear()
     }
 
+    val multiplier = {a: Int, b: Int -> a * b}
     val array1 = arrayOf(5, 6, 9, 0, 3, 5, 6, 0, 2, 4, 5, 6)
     var betweenZero = false
     var elementsBetweenZero = 0
