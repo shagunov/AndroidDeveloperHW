@@ -11,6 +11,11 @@ fun main() {
     val array = Array((5..10).random()){(0..100).random()}
     checkArrayElement(array, isEven)
 
+    val concat = fun (string1: String, string2: String) = string1 + string2
+    val string1 = "Hello"
+    val string2 = "World"
+    println("\"$string1\" + \"$string2\" = \"${concat(string1, string2)}\"")
+
 }
 
 fun checkArrayElement(array: Array<Int>, predicate: (Int) -> Boolean) {
