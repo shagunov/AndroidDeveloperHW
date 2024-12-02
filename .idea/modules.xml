@@ -48,6 +48,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module5/5.1.InnerClassesInterfaces/Module5.1InnerClassesInterfaces.iml" filepath="$PROJECT_DIR$/Module5/5.1.InnerClassesInterfaces/Module5.1InnerClassesInterfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module5/5.2.DataClasses/Module5.2DataClasses.iml" filepath="$PROJECT_DIR$/Module5/5.2.DataClasses/Module5.2DataClasses.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module5/5.3.Enumerators/Module5.3Enumerators.iml" filepath="$PROJECT_DIR$/Module5/5.3.Enumerators/Module5.3Enumerators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module5/5.4.AnonymosClasses/Module5.4AnonymosClasses.iml" filepath="$PROJECT_DIR$/Module5/5.4.AnonymosClasses/Module5.4AnonymosClasses.iml" />
     </modules>
   </component>
 </project>
