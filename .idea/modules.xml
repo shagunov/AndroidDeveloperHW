@@ -51,6 +51,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module5/5.4.AnonymosClasses/Module5.4AnonymosClasses.iml" filepath="$PROJECT_DIR$/Module5/5.4.AnonymosClasses/Module5.4AnonymosClasses.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module5/5.5.Delegation/Module5.5Delegation.iml" filepath="$PROJECT_DIR$/Module5/5.5.Delegation/Module5.5Delegation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module5/5.6.FunctionTypes/Module5.6FunctionTypes.iml" filepath="$PROJECT_DIR$/Module5/5.6.FunctionTypes/Module5.6FunctionTypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module5/5.7.HighOrderFuctions/Module5.7HighOrderFuctions.iml" filepath="$PROJECT_DIR$/Module5/5.7.HighOrderFuctions/Module5.7HighOrderFuctions.iml" />
     </modules>
   </component>
 </project>
