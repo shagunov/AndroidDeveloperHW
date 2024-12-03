@@ -1,8 +1,8 @@
 fun main() {
-    timesPrint(5) { println("Hello, world!!!") };
+    timesPrint(5) { println("Hello, world!!!") }
 
     val average = { numbs: Array<Int> -> numbs.average() }
-    val array = Array<Int>((5..10).random()) { (-100..100).random() }
+    val array = Array((5..10).random()) { (-100..100).random() }
     println("\nСреднее арифметическое массива: ${array.contentToString()} равно ${average(array)}")
 
     var numberOfPositiveNumbers = 0
@@ -18,9 +18,9 @@ fun main() {
         }
     }
     println("Исходный массив: ${array.contentToString()}")
-    println("Массив без отрицательных чисел: ${positiveNumbersArray.contentToString()}");
+    println("Массив без отрицательных чисел: ${positiveNumbersArray.contentToString()}")
 
-    val array1 = Array<Int>((5..10).random()) { (0..100).random() };
+    val array1 = Array((5..10).random()) { (0..100).random() }
 
     println("Исходный массив: ${array1.contentToString()}");
 
