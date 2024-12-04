@@ -54,6 +54,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module5/5.7.HighOrderFuctions/Module5.7HighOrderFuctions.iml" filepath="$PROJECT_DIR$/Module5/5.7.HighOrderFuctions/Module5.7HighOrderFuctions.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module5/5.8.AnonymFunctions/Module5.8AnonymFunctions.iml" filepath="$PROJECT_DIR$/Module5/5.8.AnonymFunctions/Module5.8AnonymFunctions.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module6/6.1.LambdaExpressions/Module6.1LambdaExpressions.iml" filepath="$PROJECT_DIR$/Module6/6.1.LambdaExpressions/Module6.1LambdaExpressions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module6/6.2.Strings/Module6.2Strings.iml" filepath="$PROJECT_DIR$/Module6/6.2.Strings/Module6.2Strings.iml" />
     </modules>
   </component>
 </project>
