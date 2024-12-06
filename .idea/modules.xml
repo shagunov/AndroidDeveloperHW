@@ -55,6 +55,8 @@
       <module fileurl="file://$PROJECT_DIR$/Module5/5.8.AnonymFunctions/Module5.8AnonymFunctions.iml" filepath="$PROJECT_DIR$/Module5/5.8.AnonymFunctions/Module5.8AnonymFunctions.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module6/6.1.LambdaExpressions/Module6.1LambdaExpressions.iml" filepath="$PROJECT_DIR$/Module6/6.1.LambdaExpressions/Module6.1LambdaExpressions.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module6/6.2.Strings/Module6.2Strings.iml" filepath="$PROJECT_DIR$/Module6/6.2.Strings/Module6.2Strings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module6/6.3.Generics/Module6.3Generics.iml" filepath="$PROJECT_DIR$/Module6/6.3.Generics/Module6.3Generics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module6/6.4.GenericConstraints/Module6.4GenericConstraints.iml" filepath="$PROJECT_DIR$/Module6/6.4.GenericConstraints/Module6.4GenericConstraints.iml" />
     </modules>
   </component>
 </project>
