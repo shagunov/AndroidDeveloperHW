@@ -7,7 +7,7 @@
     <list default="true" id="150aab85-7022-4bbb-9461-b5b4f0a3e6a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module6/6.5.Exceptions/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Module6/6.5.Exceptions/src/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module6/6.6.NullNullableTypes/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Module6/6.6.NullNullableTypes/src/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +87,7 @@
     "jdk.selected.JAVA_MODULE": "openjdk-23",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/Users/Shagu/Projects/AndroidDeveloperHW/Module6",
-    "onboarding.tips.debug.path": "E:/Users/Shagu/Projects/AndroidDeveloperHW/Module6/6.5.Exceptions/src/Main.kt",
+    "onboarding.tips.debug.path": "E:/Users/Shagu/Projects/AndroidDeveloperHW/Module6/6.6.NullNullableTypes/src/Main.kt",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15332031",
     "project.structure.side.proportion": "0.2",
@@ -101,7 +101,7 @@
       <recent name="C:\Users\Shagu\IdeaProjects\AndroidDeveloperHW\Module1\Array\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt (4)">
+  <component name="RunManager" selected="Kotlin.MainKt (3)">
     <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="Module6.3Generics" />
@@ -116,16 +116,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt (4)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="MainKt (3)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Module6.5Exceptions" />
+      <module name="Module6.6NullNullableTypes" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt (5)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="MainKt (4)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Module6.1LambdaExpressions" />
+      <module name="Module6.5Exceptions" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt (3)" />
         <item itemvalue="Kotlin.MainKt (4)" />
         <item itemvalue="Kotlin.MainKt (2)" />
         <item itemvalue="Kotlin.MainKt (1)" />
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Kotlin.MainKt (5)" />
       </list>
     </recent_temporary>
   </component>
