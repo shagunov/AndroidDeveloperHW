@@ -59,6 +59,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module6/6.4.GenericConstraints/Module6.4GenericConstraints.iml" filepath="$PROJECT_DIR$/Module6/6.4.GenericConstraints/Module6.4GenericConstraints.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module6/6.5.Exceptions/Module6.5Exceptions.iml" filepath="$PROJECT_DIR$/Module6/6.5.Exceptions/Module6.5Exceptions.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module6/6.6.NullNullableTypes/Module6.6NullNullableTypes.iml" filepath="$PROJECT_DIR$/Module6/6.6.NullNullableTypes/Module6.6NullNullableTypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module6/6.7.TypeCasting/Module6.7TypeCasting.iml" filepath="$PROJECT_DIR$/Module6/6.7.TypeCasting/Module6.7TypeCasting.iml" />
     </modules>
   </component>
 </project>
