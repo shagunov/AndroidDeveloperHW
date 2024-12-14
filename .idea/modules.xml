@@ -61,6 +61,9 @@
       <module fileurl="file://$PROJECT_DIR$/Module6/6.6.NullNullableTypes/Module6.6NullNullableTypes.iml" filepath="$PROJECT_DIR$/Module6/6.6.NullNullableTypes/Module6.6NullNullableTypes.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module6/6.7.TypeCasting/Module6.7TypeCasting.iml" filepath="$PROJECT_DIR$/Module6/6.7.TypeCasting/Module6.7TypeCasting.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module7/7.1.Extensions/Module7.1Extensions.iml" filepath="$PROJECT_DIR$/Module7/7.1.Extensions/Module7.1Extensions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module7/7.2.ScopeFun/Module7.2ScopeFun.iml" filepath="$PROJECT_DIR$/Module7/7.2.ScopeFun/Module7.2ScopeFun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module7/7.3.InfixFun/untitled/Module7.3InfixFun.iml" filepath="$PROJECT_DIR$/Module7/7.3.InfixFun/untitled/Module7.3InfixFun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module7/7.4.List/Module7.4List.iml" filepath="$PROJECT_DIR$/Module7/7.4.List/Module7.4List.iml" />
     </modules>
   </component>
 </project>
