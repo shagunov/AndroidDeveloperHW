@@ -3,14 +3,14 @@ import kotlin.math.absoluteValue
 fun main() {
     val intArray = arrayOf(1, 3, 5, 3, 123, 3, 12, 22, 1, 4, 4, 3, 4).toList()
     val intSet = mutableSetOf<Int>().apply{ for(counter in 0 .. 19) add((-100..100).random()) }
-    val evenSet = intSet.filter { element -> element.absoluteValue % 2 == 0 }
-    val oddSet = intSet.filter { element -> element.absoluteValue % 2 == 1 }
+    val evenSet = intSet.filter { it.absoluteValue % 2 == 0 }
+    val oddSet = intSet.filter { it.absoluteValue % 2 == 1 }
 
     println("Множество чисел: $intSet")
     println("Чётные числа:    $evenSet")
     println("Нечётные числа:  $oddSet")
 
-    val intSet2 = intSet.map { element -> element * 2 }.filter { element -> element.absoluteValue % 5 == 0 }
+    val intSet2 = intSet.map { it * 2 }.filter { it.absoluteValue % 5 == 0 }
     println("Тот же список, но с удвоенными элементами, кратными пяти: $intSet2")
 
     println("Список с удалёнными повторами: ${removeDuplicates(intArray)}")
