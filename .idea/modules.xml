@@ -64,6 +64,9 @@
       <module fileurl="file://$PROJECT_DIR$/Module7/7.2.ScopeFun/Module7.2ScopeFun.iml" filepath="$PROJECT_DIR$/Module7/7.2.ScopeFun/Module7.2ScopeFun.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module7/7.3.InfixFun/Module7.3InfixFun.iml" filepath="$PROJECT_DIR$/Module7/7.3.InfixFun/Module7.3InfixFun.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module7/7.4.List/Module7.4List.iml" filepath="$PROJECT_DIR$/Module7/7.4.List/Module7.4List.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module7/7.5.Set/Module7.5Set.iml" filepath="$PROJECT_DIR$/Module7/7.5.Set/Module7.5Set.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module7/7.6.Map/Module7.6Map.iml" filepath="$PROJECT_DIR$/Module7/7.6.Map/Module7.6Map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module7/7.7.Filter/Module7.7Filter.iml" filepath="$PROJECT_DIR$/Module7/7.7.Filter/Module7.7Filter.iml" />
     </modules>
   </component>
 </project>
