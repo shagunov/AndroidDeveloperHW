@@ -67,6 +67,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module7/7.5.Set/Module7.5Set.iml" filepath="$PROJECT_DIR$/Module7/7.5.Set/Module7.5Set.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module7/7.6.Map/Module7.6Map.iml" filepath="$PROJECT_DIR$/Module7/7.6.Map/Module7.6Map.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module7/7.7.Filter/Module7.7Filter.iml" filepath="$PROJECT_DIR$/Module7/7.7.Filter/Module7.7Filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module7/7.8.CheckAndGroup/Module7.8CheckAndGroup.iml" filepath="$PROJECT_DIR$/Module7/7.8.CheckAndGroup/Module7.8CheckAndGroup.iml" />
     </modules>
   </component>
 </project>
