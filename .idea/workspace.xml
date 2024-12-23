@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="150aab85-7022-4bbb-9461-b5b4f0a3e6a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module8/8.1.AndroidStudio/project/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module8/8.1.AndroidStudio/project/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module8/8.2.ResourcesMacets/project/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module8/8.2.ResourcesMacets/project/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module8/8.2.ResourcesMacets/project/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module8/8.2.ResourcesMacets/project/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module8/8.2.ResourcesMacets/project/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module8/8.2.ResourcesMacets/project/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module8/8.2.ResourcesMacets/project/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module8/8.2.ResourcesMacets/project/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
