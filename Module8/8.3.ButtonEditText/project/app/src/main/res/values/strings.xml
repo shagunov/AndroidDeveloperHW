@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ButtonEditText</string>
+    <string name="TextButton">Преобразовать</string>
+    <string name="ResultViewTextLabel">Результат</string>
+    <string name="NumberOfSymbolsLabel">Количество символов</string>"
+    <string name="TextEditHint">Введите слово</string>
+    <string name="AppName">Всё наооборот</string>
+</resources>
