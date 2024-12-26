@@ -70,6 +70,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module7/7.8.CheckAndGroup/Module7.8CheckAndGroup.iml" filepath="$PROJECT_DIR$/Module7/7.8.CheckAndGroup/Module7.8CheckAndGroup.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module8/8.1.AndroidStudio/Module8.1AndroidStudio.iml" filepath="$PROJECT_DIR$/Module8/8.1.AndroidStudio/Module8.1AndroidStudio.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module8/8.6.Sorting/Module8.6Sorting.iml" filepath="$PROJECT_DIR$/Module8/8.6.Sorting/Module8.6Sorting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module8/8.7.AgregateOperations/Module8.7AgregateOperations.iml" filepath="$PROJECT_DIR$/Module8/8.7.AgregateOperations/Module8.7AgregateOperations.iml" />
     </modules>
   </component>
 </project>
