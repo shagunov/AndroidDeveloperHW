@@ -28,7 +28,7 @@ import androidx.appcompat.app.AppCompatActivity
                         hours.text.isNotEmpty() -> (hours.text.toString().toInt() + minutes.text.toString().toInt() / 60).toString()
                         else -> (minutes.text.toString().toInt() / 60).toString()
                     })
-                    minutes.setText("59")
+                    minutes.setText((minutes.text.toString().toInt() % 60).toString())
                 }
             }
         }
@@ -40,7 +40,7 @@ import androidx.appcompat.app.AppCompatActivity
                         else -> (seconds.text.toString().toInt() / 60).toString()
                     })
                     checkMinutes()
-                    seconds.setText("59")
+                    seconds.setText((minutes.text.toString().toInt() % 60).toString())
                 }
             }
         }
