@@ -4,25 +4,28 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ReportFragment.Companion.reportFragment
 import kotlin.system.exitProcess
 
     class MainActivity : AppCompatActivity() {
 
     data class TimeForm(val hours: EditText, val minutes: EditText, val seconds: EditText){
 
+        // Variables for store current values of time
         private var curHours = 0
         private var curMinutes = 0
         private var curSeconds = 0
 
+        // Convert time to seconds
         fun toSeconds() = hours.text.toString().toInt() * 3600 + minutes.text.toString().toInt() * 60 + seconds.text.toString().toInt()
+
+        // Check if time is valid
         fun isValid() = hours.text.isNotEmpty() && minutes.text.isNotEmpty() && seconds.text.isNotEmpty()
         override fun toString() = "$hours h $minutes m $seconds s"
 
-        fun create() {
+        // Function for initialize time form
+        fun init() {
             seconds.setOnFocusChangeListener { _, hasFocus ->
                 if(seconds.text.toString().isNotEmpty()) curSeconds = seconds.text.toString().toInt()
                 if(hasFocus) {
@@ -111,8 +114,8 @@ import kotlin.system.exitProcess
                 findViewById(R.id.secondNumber2),
                 findViewById(R.id.thirdNumber2)
             )
-            timeForm1.create()
-            timeForm2.create()
+            timeForm1.init()
+            timeForm2.init()
             out = findViewById(R.id.Out)
 
             plusButton.setOnClickListener { setOut { a, b -> a + b } }
@@ -146,7 +149,7 @@ import kotlin.system.exitProcess
 
     }
 
-    fun setOut(operation: (Int, Int) -> Int){
+    private fun setOut(operation: (Int, Int) -> Int){
         if (!timeForm1.isValid() || !timeForm2.isValid()) {
             out.text = "Invalid input"
             return
