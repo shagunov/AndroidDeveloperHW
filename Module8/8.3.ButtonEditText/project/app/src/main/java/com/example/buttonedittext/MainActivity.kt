@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         pushButton = findViewById(R.id.button)
         resultTextView = findViewById(R.id.resultView)
         numberOfSymbolsTextView = findViewById(R.id.numberCharsView)
-        onClick(pushButton)
+        pushButton.setOnClickListener{onClick(pushButton)}
     }
 
     fun onClick(view: View){

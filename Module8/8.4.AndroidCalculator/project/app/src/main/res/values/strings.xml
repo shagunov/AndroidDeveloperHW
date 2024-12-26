@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AndroidCalculator</string>
+    <string name="Header">Калькулятор</string>
+    <string name="HourLetter">h</string>
+    <string name="PlusSymbol">+</string>
+    <string name="minusSymbol">-</string>
+    <string name="equalSymbol">=</string>
+    <string name="minuteLetter">m</string>
+    <string name="secondsLetter">s</string>
+    <string name="InitialOut">0 h 0 m 0 s</string>
+    <string name="ClearButton">Очистить</string>
+</resources>
