@@ -83,9 +83,9 @@ import kotlin.system.exitProcess
         }
 
         fun clear(){
-            hours.setText("")
-            minutes.setText("")
-            seconds.setText("")
+            hours.setText("0")
+            minutes.setText("0")
+            seconds.setText("0")
         }
     }
 
