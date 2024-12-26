@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ReportFragment.Companion.reportFragment
+import kotlin.system.exitProcess
 
     class MainActivity : AppCompatActivity() {
 
@@ -131,11 +132,14 @@ import androidx.lifecycle.ReportFragment.Companion.reportFragment
 
             // TODO out error message on dialog
             AlertDialog.Builder(this)
-                .setTitle("Ошибка")
-                .setMessage("Произошла ошибка: ${e.message}\n ${stackInfo}")
-                .setPositiveButton("OK") { dialog, which ->
-                    // Действие по нажатию на кнопку OK
+                .setTitle("Critical error")
+                .setMessage("Critical error has happened. Error message: ${e.message}\n $stackInfo")
+                .setPositiveButton("OK") { dialog, _ ->
                     dialog.dismiss()
+                    // TODO close app and dump stacktrace
+                    moveTaskToBack(true)
+                    android.os.Process.killProcess(android.os.Process.myPid())
+                    exitProcess(1)
                 }
                 .show()
         }
