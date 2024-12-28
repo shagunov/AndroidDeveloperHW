@@ -8,9 +8,15 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import kotlin.system.exitProcess
 
-    class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
+    data class EditTextWithValue(var editText: EditText, val value: Int){
+        fun init(){
+            editText.setOnFocusChangeListener()
+        }
 
-    data class TimeForm(val hours: EditText, val minutes: EditText, val seconds: EditText){
+    }
+
+    data class TimeForm(val hours: EditTextWithValue, val minutes: EditTextWithValue, val seconds: EditTextWithValue){
 
         // Variables for store current values of time
         private var curHours = 0
@@ -26,7 +32,7 @@ import kotlin.system.exitProcess
 
         // Function for initialize time form
         fun init() {
-            seconds.setOnFocusChangeListener { _, hasFocus ->
+            seconds.value.setOnFocusChangeListener { _, hasFocus ->
                 if(seconds.text.toString().isNotEmpty()) curSeconds = seconds.text.toString().toInt()
                 if(hasFocus) {
                     seconds.setText("")
