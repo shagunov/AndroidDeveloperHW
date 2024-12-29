@@ -113,55 +113,34 @@ class MainActivity : AppCompatActivity() {
     private lateinit var out: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        try{
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_main)
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-            plusButton = findViewById(R.id.plusButton)
-            minusButton = findViewById(R.id.minusButton)
-            clearButton = findViewById(R.id.clearButton)
-            timeForm1 = TimeForm(
-                findViewById(R.id.firstNumber1),
-                findViewById(R.id.secondNumber1),
-                findViewById(R.id.thirdNumber1)
-            )
-            timeForm2 = TimeForm(
-                findViewById(R.id.firstNumber2),
-                findViewById(R.id.secondNumber2),
-                findViewById(R.id.thirdNumber2)
-            )
-            timeForm1.init()
-            timeForm2.init()
-            out = findViewById(R.id.Out)
+        plusButton = findViewById(R.id.plusButton)
+        minusButton = findViewById(R.id.minusButton)
+        clearButton = findViewById(R.id.clearButton)
+        timeForm1 = TimeForm(
+            findViewById(R.id.firstNumber1),
+            findViewById(R.id.secondNumber1),
+            findViewById(R.id.thirdNumber1)
+        )
+        timeForm2 = TimeForm(
+            findViewById(R.id.firstNumber2),
+            findViewById(R.id.secondNumber2),
+            findViewById(R.id.thirdNumber2)
+        )
+        timeForm1.init()
+        timeForm2.init()
+        out = findViewById(R.id.Out)
 
-            plusButton.setOnClickListener { setOut { a, b -> a + b } }
-            minusButton.setOnClickListener { setOut { a, b -> a - b } }
-            clearButton.setOnClickListener {
-                timeForm1.clear()
-                timeForm2.clear()
-                out.text = getString(R.string.InitialOut)
-            }
+        plusButton.setOnClickListener { setOut { a, b -> a + b } }
+        minusButton.setOnClickListener { setOut { a, b -> a - b } }
+        clearButton.setOnClickListener {
+            timeForm1.clear()
+            timeForm2.clear()
+            out.text = getString(R.string.InitialOut)
         }
-        catch(e: Exception){
-            // TODO make stackTrace throw \n
-            var stackInfo = ""
-            for(element in e.stackTrace){
-                stackInfo += element.toString() + "\n"
-            }
 
-            // TODO out error message on dialog
-            AlertDialog.Builder(this)
-                .setTitle("Critical error")
-                .setMessage("Critical error has happened. Error message: ${e.message}\n $stackInfo")
-                .setPositiveButton("OK") { dialog, _ ->
-                    dialog.dismiss()
-                    // TODO close app and dump stacktrace
-                    moveTaskToBack(true)
-                    android.os.Process.killProcess(android.os.Process.myPid())
-                    exitProcess(1)
-                }
-                .show()
-        }
 
     }
 
