@@ -40,12 +40,6 @@ class MainActivity : AppCompatActivity() {
             value = getValueFromEditText()
         }
 
-        /**
-         * Helper functions
-         * */
-        /**
-         * EditText Functions
-         * */
         private fun getValueFromEditText() = editText.text.toString().toInt()
         private fun isNotEmpty() = editText.text.toString().isNotEmpty()
         private fun isEmpty() = editText.text.toString().isEmpty()
