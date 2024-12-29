@@ -6,92 +6,102 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import java.util.Locale
 import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
-    data class EditTextWithValue(var editText: EditText, val value: Int){
+    class EditTextWithValue(
+        private val editText: EditText,
+        private var value: Int = 0, // Current value
+        private val maxValue: Int? = null, // Max value is null when hours
+        private val greaterEdit: EditTextWithValue? = null // greater edit is null when this is hours
+    ){
+        fun getValue() = value
+
+        /**
+         * function after creating view
+         * */
         fun init(){
-            editText.setOnFocusChangeListener()
+            editText.setOnFocusChangeListener { _, hasFocus ->
+                if(isNotEmpty()) value = getValueFromEditText()
+                if(hasFocus) {
+                    clearForm()
+                }
+                else if (isEmpty()) {
+                    setValueEditText(value)
+                }
+                validate() }
+
+            setZeroValueEditText()
+
+        }
+        fun clear() = setZeroValueEditText()
+        fun synchronize() {
+            value = getValueFromEditText()
+        }
+
+        /**
+         * Helper functions
+         * */
+        /**
+         * EditText Functions
+         * */
+        private fun getValueFromEditText() = editText.text.toString().toInt()
+        private fun isNotEmpty() = editText.text.toString().isNotEmpty()
+        private fun isEmpty() = editText.text.toString().isEmpty()
+        private fun clearForm() = editText.setText("")
+        private fun setZeroValueEditText(){
+            editText.setText(String.format(Locale.getDefault(), "%02d", 0))
+            value = 0
+        }
+        private fun setValueEditText(value: Int){
+            editText.setText(String.format(Locale.getDefault(), "%02d", value))
+            this.value = value
+        }
+        private fun isGreaterThenMaxValue() = maxValue != null && maxValue < value
+        private fun addValueEditText(value: Int) = setValueEditText(this.value + value)
+        override fun toString() = value.toString()
+
+        private fun validate(){
+            if (editText.text.toString().isNotEmpty()) {
+                if (maxValue != null && isGreaterThenMaxValue()) {
+                    greaterEdit?.addValueEditText(value / maxValue)
+                    setValueEditText(value % maxValue)
+                    greaterEdit?.validate()
+                }
+            }
         }
 
     }
 
-    data class TimeForm(val hours: EditTextWithValue, val minutes: EditTextWithValue, val seconds: EditTextWithValue){
+    class TimeForm(hoursEdit: EditText, minutesEdit: EditText, secondsEdit: EditText){
 
-        // Variables for store current values of time
-        private var curHours = 0
-        private var curMinutes = 0
-        private var curSeconds = 0
+        private val hours: EditTextWithValue = EditTextWithValue(hoursEdit)
+        private val minutes: EditTextWithValue = EditTextWithValue(minutesEdit, 0, 60, hours)
+        private val seconds: EditTextWithValue = EditTextWithValue(secondsEdit, 0, 60, minutes)
 
         // Convert time to seconds
-        fun toSeconds() = hours.text.toString().toInt() * 3600 + minutes.text.toString().toInt() * 60 + seconds.text.toString().toInt()
+        fun toSeconds() = hours.getValue() * 3600 + minutes.getValue() * 60 + seconds.getValue()
 
-        // Check if time is valid
-        fun isValid() = hours.text.isNotEmpty() && minutes.text.isNotEmpty() && seconds.text.isNotEmpty()
         override fun toString() = "$hours h $minutes m $seconds s"
 
         // Function for initialize time form
         fun init() {
-            seconds.value.setOnFocusChangeListener { _, hasFocus ->
-                if(seconds.text.toString().isNotEmpty()) curSeconds = seconds.text.toString().toInt()
-                if(hasFocus) {
-                    seconds.setText("")
-                }
-                else if (seconds.text.toString() == "") {
-                    seconds.setText(curSeconds.toString())
-                }
-                checkSeconds() }
-
-            minutes.setOnFocusChangeListener { _, hasFocus ->
-                if(minutes.text.toString().isNotEmpty()) curMinutes = minutes.text.toString().toInt()
-                if(hasFocus) {
-                    minutes.setText("")
-                }
-                else if (minutes.text.toString() == "") {
-                    minutes.setText(curMinutes.toString())
-                }
-                checkMinutes() }
-
-            hours.setOnFocusChangeListener { _, hasFocus ->
-                if(hours.text.toString().isNotEmpty()) curHours = hours.text.toString().toInt()
-                if(hasFocus) hours.setText("")
-                else if (hours.text.toString() == "") {
-                    hours.setText(curHours.toString())
-                }}
-
-            seconds.setText("0")
-            minutes.setText("0")
-            hours.setText("0")
-        }
-
-        private fun checkMinutes(){
-            if (minutes.text.isNotEmpty()) {
-                if (minutes.text.toString().toInt() >= 60) {
-                    hours.setText(when {
-                        hours.text.isNotEmpty() -> (hours.text.toString().toInt() + minutes.text.toString().toInt() / 60).toString()
-                        else -> (minutes.text.toString().toInt() / 60).toString()
-                    })
-                    minutes.setText((minutes.text.toString().toInt() % 60).toString())
-                }
-            }
-        }
-        private fun checkSeconds(){
-            if (seconds.text.isNotEmpty()) {
-                if (seconds.text.toString().toInt() >= 60) {
-                    minutes.setText( when {
-                       minutes.text.isNotEmpty() -> (minutes.text.toString().toInt() + seconds.text.toString().toInt() / 60).toString()
-                        else -> (seconds.text.toString().toInt() / 60).toString()
-                    })
-                    checkMinutes()
-                    seconds.setText((minutes.text.toString().toInt() % 60).toString())
-                }
-            }
+            hours.init()
+            minutes.init()
+            seconds.init()
         }
 
         fun clear(){
-            hours.setText("0")
-            minutes.setText("0")
-            seconds.setText("0")
+            hours.clear()
+            minutes.clear()
+            seconds.clear()
+        }
+
+        fun synchronize(){
+            hours.synchronize()
+            minutes.synchronize()
+            seconds.synchronize()
         }
     }
 
@@ -156,10 +166,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setOut(operation: (Int, Int) -> Int){
-        if (!timeForm1.isValid() || !timeForm2.isValid()) {
-            out.text = "Invalid input"
-            return
-        }
+        timeForm1.synchronize()
+        timeForm2.synchronize()
         val second = operation(timeForm1.toSeconds(), timeForm2.toSeconds())
         val hours = second / 3600
         val minutes = (second % 3600) / 60
