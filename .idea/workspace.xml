@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="150aab85-7022-4bbb-9461-b5b4f0a3e6a5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Module9/9.1.SuspendFunctions/Module9.1SuspendFunctions.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module8/8.4.AndroidCalculator/project/app/src/main/java/com/example/androidcalculator/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Module8/8.4.AndroidCalculator/project/app/src/main/java/com/example/androidcalculator/MainActivity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,12 +77,16 @@
     "Application.StreamAPII.executor": "Run",
     "Application.StreamAPI_2.executor": "Run",
     "Application.WhileDoWhileForBreakContinue.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
     "Kotlin.MainKt (1).executor": "Run",
     "Kotlin.MainKt (2).executor": "Run",
     "Kotlin.MainKt (3).executor": "Run",
     "Kotlin.MainKt (4).executor": "Run",
     "Kotlin.MainKt (5).executor": "Run",
     "Kotlin.MainKt.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
@@ -92,13 +96,23 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-23",
+    "jdk.selected.JDK": "openjdk-23",
+    "jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": "openjdk-23",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Users/Shagu/Projects/AndroidDeveloperHW/Module8/8.9.GettingPartsOfElements",
-    "onboarding.tips.debug.path": "E:/Users/Shagu/Projects/8.9.GettingPartsOfElements/src/Main.kt",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "E:/Users/Shagu/Projects/AndroidDeveloperHW/Module9",
+    "onboarding.tips.debug.path": "E:/Users/Shagu/Projects/AndroidDeveloperHW/Module9/8.1.SuspendFunctions/src/Main.kt",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15332031",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "advanced.settings"
+  },
+  "keyToStringList": {
+    "jdk.preference.JDK": [
+      "23=C:/Users/Shagu/.jdks/openjdk-23.0.1"
+    ],
+    "jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": [
+      "23=C:/Users/Shagu/.jdks/openjdk-23.0.1"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -108,14 +122,7 @@
       <recent name="C:\Users\Shagu\IdeaProjects\AndroidDeveloperHW\Module1\Array\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt (5)">
-    <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Module7.8CheckAndGroup" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="MainKt (2)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="Module8.6Sorting" />
@@ -144,13 +151,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <module name="Module9.1SuspendFunctions" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.MainKt (5)" />
         <item itemvalue="Kotlin.MainKt (3)" />
         <item itemvalue="Kotlin.MainKt (4)" />
         <item itemvalue="Kotlin.MainKt (2)" />
-        <item itemvalue="Kotlin.MainKt (1)" />
       </list>
     </recent_temporary>
   </component>

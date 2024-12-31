@@ -73,6 +73,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module8/8.7.AgregateOperations/Module8.7AgregateOperations.iml" filepath="$PROJECT_DIR$/Module8/8.7.AgregateOperations/Module8.7AgregateOperations.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module8/8.8.OperationBeetweenColections/Module8.8OperationBeetweenColections.iml" filepath="$PROJECT_DIR$/Module8/8.8.OperationBeetweenColections/Module8.8OperationBeetweenColections.iml" />
       <module fileurl="file://$PROJECT_DIR$/../8.9.GettingPartsOfElements/Module8.9GettingPartsOfElements.iml" filepath="$PROJECT_DIR$/../8.9.GettingPartsOfElements/Module8.9GettingPartsOfElements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module9/9.1.SuspendFunctions/Module9.1SuspendFunctions.iml" filepath="$PROJECT_DIR$/Module9/9.1.SuspendFunctions/Module9.1SuspendFunctions.iml" />
     </modules>
   </component>
 </project>
