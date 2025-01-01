@@ -5,9 +5,82 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="150aab85-7022-4bbb-9461-b5b4f0a3e6a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Module9/9.1.SuspendFunctions/Module9.1SuspendFunctions.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module8/8.1.AndroidStudio/Module8.1AndroidStudio.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module9/9.2.CorutineScopeLaunchJobRunBlocking/Module9.2CorutineScopeLaunchJobRunBlocking.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jetbrains_kotlinx_coroutines_core_jvm.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module0/0.1.IntelijIDE/Module0.1IntelijIDE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module0/0.1.IntelijIDE/Module0.1IntelijIDE.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module0/0.2.VariablesDataTypesOperators/Module0.2VariablesDataTypesOperators.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module0/0.2.VariablesDataTypesOperators/Module0.2VariablesDataTypesOperators.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module1/1.1.JavaIfSwitchReturn/Module1.1JavaIfSwitchReturn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/1.1.JavaIfSwitchReturn/Module1.1JavaIfSwitchReturn.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module1/1.2.WhileDoWhileForBreakContinue/Module1.2WhileDoWhileForBreakContinue.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/1.2.WhileDoWhileForBreakContinue/Module1.2WhileDoWhileForBreakContinue.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module1/1.3.ClassMembersConstructorsMethods/Module1.3ClassMembersConstructorsMethods.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/1.3.ClassMembersConstructorsMethods/Module1.3ClassMembersConstructorsMethods.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module1/1.4.Array/Module1.4Array.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/1.4.Array/Module1.4Array.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module1/1.5.String/Module1.5String.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/1.5.String/Module1.5String.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module1/1.6.EncapsulationGetterSetter/Module1.6EncapsulationGetterSetter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module1/1.6.EncapsulationGetterSetter/Module1.6EncapsulationGetterSetter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/2.1.Inheritance/Module2.1Inheritance.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.1.Inheritance/Module2.1Inheritance.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/2.10.MapHashMapTreeMap/Module2.10MapHashMapTreeMap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.10.MapHashMapTreeMap/Module2.10MapHashMapTreeMap.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/2.11.Enum/Module2.11Enum.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.11.Enum/Module2.11Enum.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/2.12.AnonymeClass/Module2.12AnonymeClass.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.12.AnonymeClass/Module2.12AnonymeClass.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/2.13.Lambda/Module2.13Lambda.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.13.Lambda/Module2.13Lambda.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/2.14.StreamAPI_1/Module2.14StreamAPI_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.14.StreamAPI_1/Module2.14StreamAPI_1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/2.15.StreamAPI_2/Module2.15StreamAPI_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.15.StreamAPI_2/Module2.15StreamAPI_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/2.16.Debugger/Module2.16Debugger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.16.Debugger/Module2.16Debugger.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/2.2.Abstraction/Module2.2Abstraction.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.2.Abstraction/Module2.2Abstraction.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/2.3.Interfaces/Module2.3Interfaces.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.3.Interfaces/Module2.3Interfaces.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/2.4.NestedInner/Module2.4NestedInner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.4.NestedInner/Module2.4NestedInner.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/2.5.Exception/Module2.5Exception.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.5.Exception/Module2.5Exception.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/2.6.File/Module2.6File.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.6.File/Module2.6File.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/2.7.GenericAutoboxingAutounboxing/Module2.7GenericAutoboxingAutounboxing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.7.GenericAutoboxingAutounboxing/Module2.7GenericAutoboxingAutounboxing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/2.8.CollectionListArrayListLinkedList/Module2.8CollectionListArrayListLinkedList.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.8.CollectionListArrayListLinkedList/Module2.8CollectionListArrayListLinkedList.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/2.9.SetHashSetLinkedHashSetTreeSet/Module2.9SetHashSetLinkedHashSetTreeSet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/2.9.SetHashSetLinkedHashSetTreeSet/Module2.9SetHashSetLinkedHashSetTreeSet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/3.1.Variables/Module3.1Variables.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module3/3.1.Variables/Module3.1Variables.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/3.2.KotlinsOperators/Module3.2KotlinsOperators.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module3/3.2.KotlinsOperators/Module3.2KotlinsOperators.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/3.3.OperatorIf/Module3.3OperatorIf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module3/3.3.OperatorIf/Module3.3OperatorIf.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/3.4.OperatorWhen/Module3.4OperatorWhen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module3/3.4.OperatorWhen/Module3.4OperatorWhen.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/3.5.OperatorWhileDoWhile/Module3.5OperatorWhileDoWhile.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module3/3.5.OperatorWhileDoWhile/Module3.5OperatorWhileDoWhile.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/3.6.OperatorFor/Module3.6OperatorFor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module3/3.6.OperatorFor/Module3.6OperatorFor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/3.7.BreakContinue/Module3.7BreakContinue.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module3/3.7.BreakContinue/Module3.7BreakContinue.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/3.8.Arrays/Module3.8Arrays.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module3/3.8.Arrays/Module3.8Arrays.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module3/3.9.MultidimentionalArrays/Module3.9MultidimentionalArrays.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module3/3.9.MultidimentionalArrays/Module3.9MultidimentionalArrays.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module4/4.1.Functions/Module4.1Functions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module4/4.1.Functions/Module4.1Functions.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module4/4.10.OverridingMethodsProperties/Module4.10OverridingMethodsProperties.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module4/4.10.OverridingMethodsProperties/Module4.10OverridingMethodsProperties.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module4/4.2.OperatorReturn/Module4.2OperatorReturn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module4/4.2.OperatorReturn/Module4.2OperatorReturn.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module4/4.3.ClassClassMembers/Module4.3ClassClassMembers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module4/4.3.ClassClassMembers/Module4.3ClassClassMembers.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module4/4.4.AccessModificators/Module4.4AccessModificators.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module4/4.4.AccessModificators/Module4.4AccessModificators.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module4/4.5.ClassConstructors/Module4.5ClassConstructors.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module4/4.5.ClassConstructors/Module4.5ClassConstructors.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module4/4.6.GetterSetterIncapsulation/Module4.6GetterSetterIncapsulation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module4/4.6.GetterSetterIncapsulation/Module4.6GetterSetterIncapsulation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module4/4.7.Inheritance/Module4.7Inheritance.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module4/4.7.Inheritance/Module4.7Inheritance.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module4/4.8.AbstractionClasses/Module4.8AbstractionClasses.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module4/4.8.AbstractionClasses/Module4.8AbstractionClasses.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module4/4.9.Interfaces/Module4.9Interfaces.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module4/4.9.Interfaces/Module4.9Interfaces.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module5/5.1.InnerClassesInterfaces/Module5.1InnerClassesInterfaces.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module5/5.1.InnerClassesInterfaces/Module5.1InnerClassesInterfaces.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module5/5.2.DataClasses/Module5.2DataClasses.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module5/5.2.DataClasses/Module5.2DataClasses.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module5/5.3.Enumerators/Module5.3Enumerators.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module5/5.3.Enumerators/Module5.3Enumerators.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module5/5.4.AnonymosClasses/Module5.4AnonymosClasses.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module5/5.4.AnonymosClasses/Module5.4AnonymosClasses.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module5/5.5.Delegation/Module5.5Delegation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module5/5.5.Delegation/Module5.5Delegation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module5/5.6.FunctionTypes/Module5.6FunctionTypes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module5/5.6.FunctionTypes/Module5.6FunctionTypes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module5/5.7.HighOrderFuctions/Module5.7HighOrderFuctions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module5/5.7.HighOrderFuctions/Module5.7HighOrderFuctions.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module5/5.8.AnonymFunctions/Module5.8AnonymFunctions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module5/5.8.AnonymFunctions/Module5.8AnonymFunctions.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module6/6.1.LambdaExpressions/Module6.1LambdaExpressions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module6/6.1.LambdaExpressions/Module6.1LambdaExpressions.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module6/6.2.Strings/Module6.2Strings.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module6/6.2.Strings/Module6.2Strings.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module6/6.3.Generics/Module6.3Generics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module6/6.3.Generics/Module6.3Generics.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module6/6.4.GenericConstraints/Module6.4GenericConstraints.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module6/6.4.GenericConstraints/Module6.4GenericConstraints.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module6/6.5.Exceptions/Module6.5Exceptions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module6/6.5.Exceptions/Module6.5Exceptions.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module6/6.6.NullNullableTypes/Module6.6NullNullableTypes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module6/6.6.NullNullableTypes/Module6.6NullNullableTypes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module6/6.7.TypeCasting/Module6.7TypeCasting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module6/6.7.TypeCasting/Module6.7TypeCasting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module7/7.1.Extensions/Module7.1Extensions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module7/7.1.Extensions/Module7.1Extensions.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module7/7.2.ScopeFun/Module7.2ScopeFun.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module7/7.2.ScopeFun/Module7.2ScopeFun.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module7/7.3.InfixFun/Module7.3InfixFun.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module7/7.3.InfixFun/Module7.3InfixFun.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module7/7.4.List/Module7.4List.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module7/7.4.List/Module7.4List.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module7/7.5.Set/Module7.5Set.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module7/7.5.Set/Module7.5Set.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module7/7.6.Map/Module7.6Map.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module7/7.6.Map/Module7.6Map.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module7/7.7.Filter/Module7.7Filter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module7/7.7.Filter/Module7.7Filter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module7/7.8.CheckAndGroup/Module7.8CheckAndGroup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module7/7.8.CheckAndGroup/Module7.8CheckAndGroup.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module8/8.6.Sorting/Module8.6Sorting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module8/8.6.Sorting/Module8.6Sorting.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module8/8.7.AgregateOperations/Module8.7AgregateOperations.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module8/8.7.AgregateOperations/Module8.7AgregateOperations.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module8/8.8.OperationBeetweenColections/Module8.8OperationBeetweenColections.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module8/8.8.OperationBeetweenColections/Module8.8OperationBeetweenColections.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module9/9.1.SuspendFunctions/Module9.1SuspendFunctions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module9/9.1.SuspendFunctions/Module9.1SuspendFunctions.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,9 +172,9 @@
     "jdk.selected.JDK": "openjdk-23",
     "jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": "openjdk-23",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Users/Shagu/Projects/AndroidDeveloperHW/Module9",
-    "onboarding.tips.debug.path": "E:/Users/Shagu/Projects/AndroidDeveloperHW/Module9/8.1.SuspendFunctions/src/Main.kt",
-    "project.structure.last.edited": "Libraries",
+    "last_opened_file_path": "E:/Users/Shagu/Projects/AndroidDeveloperHW/Module9/9.2.CorutineScopeLaunchJobRunBlocking",
+    "onboarding.tips.debug.path": "E:/Users/Shagu/Projects/AndroidDeveloperHW/Module9/9.2.CorutineScopeLaunchJobRunBlocking/src/Main.kt",
+    "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15332031",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "advanced.settings"
@@ -122,10 +195,10 @@
       <recent name="C:\Users\Shagu\IdeaProjects\AndroidDeveloperHW\Module1\Array\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
-    <configuration name="MainKt (2)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin.MainKt (1)">
+    <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
-      <module name="Module8.6Sorting" />
+      <module name="Module9.2CorutineScopeLaunchJobRunBlocking" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt (1)" />
         <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.MainKt (5)" />
         <item itemvalue="Kotlin.MainKt (3)" />
         <item itemvalue="Kotlin.MainKt (4)" />
-        <item itemvalue="Kotlin.MainKt (2)" />
       </list>
     </recent_temporary>
   </component>

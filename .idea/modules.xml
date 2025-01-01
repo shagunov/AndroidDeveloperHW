@@ -74,6 +74,7 @@
       <module fileurl="file://$PROJECT_DIR$/Module8/8.8.OperationBeetweenColections/Module8.8OperationBeetweenColections.iml" filepath="$PROJECT_DIR$/Module8/8.8.OperationBeetweenColections/Module8.8OperationBeetweenColections.iml" />
       <module fileurl="file://$PROJECT_DIR$/../8.9.GettingPartsOfElements/Module8.9GettingPartsOfElements.iml" filepath="$PROJECT_DIR$/../8.9.GettingPartsOfElements/Module8.9GettingPartsOfElements.iml" />
       <module fileurl="file://$PROJECT_DIR$/Module9/9.1.SuspendFunctions/Module9.1SuspendFunctions.iml" filepath="$PROJECT_DIR$/Module9/9.1.SuspendFunctions/Module9.1SuspendFunctions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Module9/9.2.CorutineScopeLaunchJobRunBlocking/Module9.2CorutineScopeLaunchJobRunBlocking.iml" filepath="$PROJECT_DIR$/Module9/9.2.CorutineScopeLaunchJobRunBlocking/Module9.2CorutineScopeLaunchJobRunBlocking.iml" />
     </modules>
   </component>
 </project>
