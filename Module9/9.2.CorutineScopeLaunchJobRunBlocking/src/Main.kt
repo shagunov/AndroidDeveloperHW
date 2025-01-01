@@ -41,19 +41,22 @@ fun main() = runBlocking {
     }
     goodBye()
 
-    println("Начало программы")
+
     launch {
+        println("Начало программы")
         launch{
             for(counter in 1..4){
                 println(counter)
                 delay(1000)
             }
         }
+        launch {
+            delay(4000L)
+            println("Програма завершена")
+        }
         val lazyLaunch = launch(start = CoroutineStart.LAZY) { println("Произошёл ленивый запуск") }
         delay(2000L)
         lazyLaunch.start()
-        delay(2000L)
-        println("Програма завершена")
 
     }
 
