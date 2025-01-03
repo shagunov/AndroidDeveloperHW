@@ -12,11 +12,13 @@ import kotlin.system.exitProcess
 class MainActivity : AppCompatActivity() {
     class EditTextWithValue(
         private val editText: EditText,
-        private var value: Int = 0, // Current value
+        value: Int = 0, // Current value
         private val maxValue: Int? = null, // Max value is null when hours
         private val greaterEdit: EditTextWithValue? = null // greater edit is null when this is hours
     ){
-        fun getValue() = value
+        // Value of edit text is private and can be get by toString function
+        var value: Int = value
+        private set
 
         /**
          * function after creating view
@@ -75,7 +77,7 @@ class MainActivity : AppCompatActivity() {
         private val seconds: EditTextWithValue = EditTextWithValue(secondsEdit, 0, 60, minutes)
 
         // Convert time to seconds
-        fun toSeconds() = hours.getValue() * 3600 + minutes.getValue() * 60 + seconds.getValue()
+        fun toSeconds() = hours.value * 3600 + minutes.value * 60 + seconds.value
 
         override fun toString() = "$hours h $minutes m $seconds s"
 
