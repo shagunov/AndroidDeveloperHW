@@ -3,33 +3,24 @@ import kotlinx.coroutines.channels.*
 import kotlin.system.measureTimeMillis
 
 class Storage {
-    val text = """
-        Мартышка к старости слаба глазами стала;
-        А у людей про то она слыхала,
-        Что это зло еще не так большой беды:
-        Лишь стоит завести Очки.
-        Очков с полдюжины себе достала;
-        Вертит Очками так и сяк:
-        То к темю их прижмет, то их на хвост нанижет,
-        То их понюхает, то их полижет;
-        Очки не действуют никак.
-        "Тьфу пропасть!" говорит она, "и тот дурак,
-        Кто слушает людских всех врак;
-        Всё про Очки мне ложь сказали;
-        А пользы нет в них ни на малой капли".
-    """.trimIndent()
+    val text =
+        "Мартышка к старости слаба глазами стала;\n" +
+        "А у людей про то она слыхала,\n" +
+        "Что это зло еще не так большой беды:\n" +
+        "Лишь стоит завести Очки.\n" +
+        "Очков с полдюжины себе достала;\n" +
+        "Вертит Очками так и сяк:\n" +
+        "То к темю их прижмет, то их на хвост нанижет,\n" +
+        "То их понюхает, то их полижет;\n" +
+        "Очки не действуют никак.\n" +
+        "\"Тьфу пропасть!\" говорит она, \"и тот дурак,\n" +
+        "Кто слушает людских всех врак;\n" +
+        "Всё про Очки мне ложь сказали;\n" +
+        "А пользы нет в них ни на малой капли\""
 }
 
 
 suspend fun getList(text: String, channel: Channel<String>) {
-    text.split(" ", "\n", ",", ";", ":", ".", "!", "?", "\"").filter { it.isNotBlank() }.forEach { word ->
-        channel.send(word)
-        delay(10L)
-    }
-    channel.close()
-}
-
-suspend fun getStringList(text: String, channel: Channel<String>) {
     text.split("\n").filter { it.isNotBlank() }.forEach { line ->
         channel.send(line)
     }
@@ -72,7 +63,7 @@ fun main() = runBlocking {
     val channel2 = Channel<String>()
     val channel3 = Channel<String>()
     val time2 = measureTimeMillis {
-        launch { getStringList(storage.text, channel2)}
+        launch { getList(storage.text, channel2)}
         launch { modifiedList(channel2, channel3) }
 
 
