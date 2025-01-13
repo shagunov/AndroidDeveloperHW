@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">10.2.ContextMenu</string>
+    <string name="ChangeColorMenuItemText">Цветовое качество</string>
+    <string name="ExitMenuItemString">Выход из приложения</string>
+    <string name="NoteString">Оценка</string>
+    <string name="RandomString">Случайное число</string>
+</resources>
