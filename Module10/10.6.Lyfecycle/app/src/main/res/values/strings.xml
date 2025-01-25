@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lyfecycle</string>
+    <string name="MassIndexString">Индекс массы тела:</string>
+    <string name="RecomendationTitleString">Рекомендации:</string>
+    <string name="HeightTextEditString">Рост (см):</string>
+    <string name="HeightEditTextHintString">Введите рост в сантиметрах</string>
+    <string name="WeightTitleEditTextString">Вес (кг):</string>
+    <string name="WeightEditTextHintString">Введите вес в килограммах</string>
+    <string name="ComputeButtonString">Рассчитать</string>
+</resources>
