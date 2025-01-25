@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CheckBoxSnackBar</string>
+    <string name="StoreDataBTNstring">Сохранить данные</string>
+    <string name="ClearDataBtnString">Удалить данные</string>
+    <string name="EnterDataString">Ввод данных</string>
+    <string name="OutDataString">Вывод данных</string>
+    <string name="CheckBoxString">Информация</string>
+</resources>
