@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hidden Calculator</string>
+    <string name="TransferButtonString">Передать данные</string>
+    <string name="DivString">/</string>
+    <string name="MulString">*</string>
+    <string name="MinusString">-</string>
+    <string name="PlusString">+</string>
+    <string name="_2String">Введите число 2</string>
+    <string name="_1String">Введите число 1</string>
+    <string name="CalculatorButtonString">Калькулятор</string>
+</resources>
