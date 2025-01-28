@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ListView</string>
+    <string name="NameEditTextHintString">Имя</string>
+    <string name="AgeEditTextHintString">Возраст</string>
+    <string name="StoreButtonString">Сохранить</string>
+    <string name="ExitMenuItemString">Exit</string>
+</resources>
