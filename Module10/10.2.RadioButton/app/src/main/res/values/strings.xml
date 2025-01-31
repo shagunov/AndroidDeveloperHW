@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RadioButton</string>
+    <string name="BeginTestButtonString">Начать</string>
+    <string name="Question1String">Какое событие считается началом Смутного времени в России?</string>
+    <string name="Question11String">Восстание Степана Разина</string>
+    <string name="Question12String">Смерть Ивана Грозного</string>
+    <string name="Question13String">Пресечение династии Рюриковичей</string>
+    <string name="Question2String">Какой русский царь провел масштабные реформы, направленные на модернизацию армии и флота?</string>
+    <string name="Question21String">Алексей Михайлович</string>
+    <string name="Question22String">Петр I</string>
+    <string name="Question23String">Александр II</string>
+    <string name="Question3String">Какое сражение стало переломным моментом в Великой Отечественной войне?</string>
+    <string name="Question31String">Битва за Москву</string>
+    <string name="Question32String">Сталинградская битва</string>
+    <string name="Question33String">Курская битва</string>
+    <string name="Question4String">Какой документ провозгласил отмену крепостного права в России?</string>
+    <string name="Question41String">\"Манифест о вольности дворянства\"</string>
+    <string name="Question42String">\"Жалованная грамота дворянству\"</string>
+    <string name="Question43String">\"Манифест 19 февраля 1861 года\"</string>
+    <string name="Question5String">Какой политический строй был установлен в России после Февральской революции 1917 года?</string>
+    <string name="Question51String">Самодержавие</string>
+    <string name="Question52String">Временное правительство</string>
+    <string name="Question53String">Советская власть</string>
+    <string name="ResultString">Результат</string>
+</resources>
