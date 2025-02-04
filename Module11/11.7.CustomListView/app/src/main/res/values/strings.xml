@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Custom ListView</string>
+    <string name="avatarString">Аватар</string>
+</resources>
