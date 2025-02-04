@@ -1,7 +1,6 @@
 package com.example.addressbook
 
 import android.os.Parcelable
-import android.util.Log
 import java.io.Serializable
 
 data class User(val name: String, val age: Int, val email: String) : Serializable

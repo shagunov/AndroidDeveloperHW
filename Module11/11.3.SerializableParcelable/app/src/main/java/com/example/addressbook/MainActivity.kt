@@ -30,8 +30,17 @@ class MainActivity : AppCompatActivity(), Serializable {
             val user = User(nameET.stringValue, ageET.intValue, emailET.stringValue)
             val userParcelable = UserParcelable(nameET.stringValue, ageET.intValue, emailET.stringValue)
             val intent = Intent(this, DetailActivity::class.java)
+            val start = System.nanoTime()
             intent.putExtra("User", user)
+            val end = System.nanoTime()
             intent.putExtra("UserParcelable", userParcelable)
+            val endParcelable = System.nanoTime()
+
+            intent.putExtra("start", start)
+            intent.putExtra("end", end)
+            intent.putExtra("endParcelable", endParcelable)
+
+
             startActivity(intent)
         }
     }
