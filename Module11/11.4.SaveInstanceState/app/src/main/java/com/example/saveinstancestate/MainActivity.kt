@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        outState.putString("input", output.text.toString())
-        outState.putString("output", input.text.toString())
+        outState.putString("output", output.text.toString())
+        outState.putString("input", input.text.toString())
     }
 
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
