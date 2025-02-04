@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Address book</string>
+    <string name="NameString">Имя:</string>
+    <string name="HintString">Введите здесь</string>
+    <string name="ageString">Возраст:</string>
+    <string name="e_mailString">e-mail:</string>
+    <string name="TransString">Передать</string>
+    <string name="BackString">Вернуться</string>
+</resources>
