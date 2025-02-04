@@ -36,9 +36,11 @@ class MainActivity : AppCompatActivity(), Serializable {
             intent.putExtra("UserParcelable", userParcelable)
             val endParcelable = System.nanoTime()
 
-            intent.putExtra("start", start)
-            intent.putExtra("end", end)
-            intent.putExtra("endParcelable", endParcelable)
+            val timeSerializable = end - start
+            val timeParcelable = endParcelable - end
+
+            intent.putExtra("timeSerializable", timeSerializable)
+            intent.putExtra("timeParcelable", timeParcelable)
 
 
             startActivity(intent)

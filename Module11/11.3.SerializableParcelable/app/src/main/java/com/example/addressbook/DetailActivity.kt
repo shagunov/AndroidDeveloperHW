@@ -23,17 +23,13 @@ class DetailActivity : AppCompatActivity() {
         val userParcelableInfo = "Имя: ${userParcelable?.name}\nВозраст: ${userParcelable?.age}\nEmail: ${userParcelable?.email}"
         findViewById<TextView>(R.id.receiveParcelableTV).text = userParcelableInfo
 
-        val start = intent.getLongExtra("start", 0)
-        val end = intent.getLongExtra("end", 0)
-        val endParcelable = intent.getLongExtra("endParcelable", 0)
-
-        val time = end - start
-        val timeParcelable = endParcelable - end
+        val time = intent.getLongExtra("timeSerializable", 0)
+        val timeParcelable = intent.getLongExtra("timeParcelable", 0)
 
         // Вывести диалог с результатами
         AlertDialog.Builder(this)
             .setTitle("Результаты")
-            .setMessage("Время выполнения Serializable: ${time} нс. Время выполнения Parcelable: ${timeParcelable} нс")
+            .setMessage("Время выполнения Serializable: $time нс. Время выполнения Parcelable: $timeParcelable нс")
             .setPositiveButton("OK", null)
             .show()
 
