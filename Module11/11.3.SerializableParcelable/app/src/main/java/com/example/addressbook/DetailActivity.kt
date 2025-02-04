@@ -18,9 +18,11 @@ class DetailActivity : AppCompatActivity() {
 
         val user = intent.getSerializableExtra("User") as User
         val userInfo = "Имя: ${user.name}\nВозраст: ${user.age}\nEmail: ${user.email}"
-        findViewById<TextView>(R.id.receiveTV).text = userInfo
+
         val userParcelable = intent.getParcelableExtra<UserParcelable>("UserParcelable")
         val userParcelableInfo = "Имя: ${userParcelable?.name}\nВозраст: ${userParcelable?.age}\nEmail: ${userParcelable?.email}"
+
+        findViewById<TextView>(R.id.receiveTV).text = userInfo
         findViewById<TextView>(R.id.receiveParcelableTV).text = userParcelableInfo
 
         val time = intent.getLongExtra("timeSerializable", 0)
