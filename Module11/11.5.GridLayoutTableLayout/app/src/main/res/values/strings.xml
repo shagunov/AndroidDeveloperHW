@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">GridLayout TableLayout</string>
+    <string name="exitString">Выйти</string>
+    <string name="toTableLayoutString">Перейти к TableLayout</string>
+    <string name="toGridLayoutString">Перейти к GridLayout</string>
+    <string name="toMainActivity">Перейти на главную</string>
+    <string name="addRowString">Добавить строку</string>
+    <string name="enterColumnNameString">Напишите название колонки</string>
+    <string name="columnFirstString">Колонка 1</string>
+    <string name="rowFirstString">1 строка</string>
+    <string name="rowSecondString">2 строка</string>
+    <string name="rowThirdString">3 строка</string>
+    <string name="applyString">Применить</string>
 </resources>
