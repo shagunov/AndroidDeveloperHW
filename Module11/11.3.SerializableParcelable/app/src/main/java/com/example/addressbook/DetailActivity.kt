@@ -16,22 +16,25 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
+        val start = System.nanoTime()
         val user = intent.getSerializableExtra("User") as User
-        val userInfo = "Имя: ${user.name}\nВозраст: ${user.age}\nEmail: ${user.email}"
-
+        val end = System.nanoTime()
         val userParcelable = intent.getParcelableExtra<UserParcelable>("UserParcelable")
+        val endParcelable = System.nanoTime()
+
+        val timeSerializable = end - start
+        val timeParcelable = endParcelable - end
+
+        val userInfo = "Имя: ${user.name}\nВозраст: ${user.age}\nEmail: ${user.email}"
         val userParcelableInfo = "Имя: ${userParcelable?.name}\nВозраст: ${userParcelable?.age}\nEmail: ${userParcelable?.email}"
 
         findViewById<TextView>(R.id.receiveTV).text = userInfo
         findViewById<TextView>(R.id.receiveParcelableTV).text = userParcelableInfo
 
-        val time = intent.getLongExtra("timeSerializable", 0)
-        val timeParcelable = intent.getLongExtra("timeParcelable", 0)
-
         // Вывести диалог с результатами
         AlertDialog.Builder(this)
             .setTitle("Результаты")
-            .setMessage("Время выполнения Serializable: $time нс. Время выполнения Parcelable: $timeParcelable нс")
+            .setMessage("Время выполнения Serializable: $timeSerializable нс. Время выполнения Parcelable: $timeParcelable нс")
             .setPositiveButton("OK", null)
             .show()
 
