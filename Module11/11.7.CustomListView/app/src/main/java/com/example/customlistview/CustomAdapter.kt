@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter
 import androidx.core.content.ContextCompat
 import com.example.customlistview.databinding.ListItemBinding
 
-class CustomAdapter(var mCtx: Context, objects: List<User>) : ArrayAdapter<User>(mCtx, R.layout.list_item, objects){
+class CustomAdapter(private var mCtx: Context, objects: List<User>) : ArrayAdapter<User>(mCtx, R.layout.list_item, objects){
 
     // Custom adapter logic here
     @SuppressLint("SetTextI18n")
