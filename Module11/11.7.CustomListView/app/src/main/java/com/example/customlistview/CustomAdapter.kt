@@ -6,27 +6,32 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import android.widget.ImageView
-import android.widget.TextView
+import androidx.core.content.ContextCompat
 import com.example.customlistview.databinding.ListItemBinding
 
 class CustomAdapter(var mCtx: Context, objects: List<User>) : ArrayAdapter<User>(mCtx, R.layout.list_item, objects){
 
     // Custom adapter logic here
-    @SuppressLint("SetTextI18n", "UseCompatLoadingForDrawables", "ViewHolder", "InflateParams")
+    @SuppressLint("SetTextI18n")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val inflater : LayoutInflater = LayoutInflater.from(mCtx)
+        val binding: ListItemBinding
+        val view: View
 
-        val view : View = inflater.inflate(R.layout.list_item, null)
+        if (convertView == null) {
+            binding = ListItemBinding.inflate(LayoutInflater.from(mCtx), parent, false)
+            view = binding.root
+            view.tag = binding
 
-        val imageView = view.findViewById<ImageView>(R.id.avatar)
-        val textView1 = view.findViewById<TextView>(R.id.name)
-        val textView2 = view.findViewById<TextView>(R.id.age)
+        } else {
+            view = convertView
+            binding = view.tag as ListItemBinding
+        }
 
-        val user = getItem(position)
-        imageView.setImageDrawable(mCtx.resources.getDrawable(user!!.avatarID))
-        textView1.text = user.name
-        textView2.text = user.age.toString()
+        val user = getItem(position)!!
+
+        binding.avatar.setImageDrawable(ContextCompat.getDrawable(mCtx, user.avatarID))
+        binding.name.text = user.name
+        binding.age.text = user.age.toString()
 
         return view
     }
