@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CoroutinePractice</string>
+    <string name="launchString">Launch</string>
+    <string name="startString">Старт</string>
+    <string name="stopString">Стоп</string>
+    <string name="stoppedString">Остановлено</string>
+    <string name="Task11String">Запуск корутины</string>
+    <string name="Task12String">Несколько корутин</string>
+    <string name="Task13String">Переключение контекстов</string>
+    <string name="Task14String">Отмена корутины</string>
+    <string name="task15String">Обработка ошибок в Flow</string>
+    <string name="task22String">Функции потоков (Flow)</string>
+    <string name="task23String">Преобразование данных и объединение потоков</string>
+    <string name="task32String">Фильтрация данных в Flow</string>
+    <string name="task31String">Преобразование потока</string>
+    <string name="task33String">Буферизация</string>
+    <string name="task34String">Объединение двух потоков</string>
+</resources>

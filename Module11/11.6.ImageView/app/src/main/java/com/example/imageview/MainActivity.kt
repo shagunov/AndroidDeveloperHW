@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         binder = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binder.root)
 
-        val adapter = ArrayAdapter.createFromResource(this, R.array.imagesStrings, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item)
+        val adapter = ArrayAdapter.createFromResource(this, R.array.imagesStrings, android.R.layout.simple_spinner_dropdown_item)
         binder.spinner.adapter = adapter
 
         binder.spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
