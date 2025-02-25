@@ -64,8 +64,7 @@ class MainActivity : AppCompatActivity() {
                         delay(3000L)
                         resultTV.text = getString(R.string.let_s_get_started)
                     }
-                    .onEach { resultTV.text = "${resultTV.text} $it" }
-                    .collect{}
+                    .collect{ resultTV.text = "${resultTV.text} $it" }
             }
         }
 
@@ -74,12 +73,11 @@ class MainActivity : AppCompatActivity() {
 
             lifecycleScope.launch{
                 sharedFlow
-                    .onCompletion {
-                        delay(3000L)
-                        resultTV.text = getString(R.string.let_s_get_started)
+                    .buffer()
+                    .collect{
+                        delay(2000)
+                        resultTV.text = "${resultTV.text} $it"
                     }
-                    .onEach { resultTV.text = "${resultTV.text} $it" }
-                    .collect{}
             }
         }
     }
