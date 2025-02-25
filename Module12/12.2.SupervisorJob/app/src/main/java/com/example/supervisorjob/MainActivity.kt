@@ -19,12 +19,13 @@ import kotlinx.coroutines.cancel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.joinAll
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.supervisorScope
 
 class MainActivity : AppCompatActivity() {
 
-    private val coroutineScope = CoroutineScope(Dispatchers.Main.immediate + SupervisorJob() + CoroutineExceptionHandler{ _, cause ->
+    private val handler = CoroutineExceptionHandler{ _, cause ->
         Log.e("error", "Произошла ошибка: ${cause.message}")
-    })
+    }
     private lateinit var button: Button
     private lateinit var textView: TextView
 
@@ -43,39 +44,30 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
 
-            lifecycleScope.launch{
+            lifecycleScope.launch(handler){
 
-                textView.text = "Запущено"
-                val job1 = coroutineScope.launch {
-                    delay(2000)
-                    Log.d(null, "Первая корутина завершилась")
-                }
-                val job2 = coroutineScope.launch {
-                    try {
+                supervisorScope{
+                    val job1 = launch {
+                        delay(2000)
+                        Log.d(null, "Первая корутина завершилась")
+                    }
+                    val job2 = launch {
                         delay(1000)
                         throw IllegalStateException()
+                    }
+                    val job3 = launch {
+                        delay(3000)
+                        Log.d(null, "Третья корутина завершилась")
+                    }
+                    try {
+                        job1.join()
+                        job2.join()
+                        job3.join()
                     } catch (e: Exception) {
-                        Log.e(null, "Во второй корутине произошла ошибка: ${e.message}")
-                        throw e
-                    } finally {
-                        Log.d(null, "Вторая корутина завершилась")
+                        println("Ошибка")
                     }
                 }
-                val job3 = coroutineScope.launch {
-                    delay(3000)
-                    Log.d(null, "Третья корутина завершилась")
-                }
-                job1.join()
-                job2.join()
-                job3.join()
-                textView.text = "Завершено"
             }
         }
-
-    }
-
-    override fun onDestroy() {
-        coroutineScope.cancel()
-        super.onDestroy()
     }
 }
