@@ -24,7 +24,7 @@ import kotlinx.coroutines.supervisorScope
 class MainActivity : AppCompatActivity() {
 
     private val handler = CoroutineExceptionHandler{ _, cause ->
-        Log.e("error", "Произошла ошибка: ${cause.message}")
+        Log.e("@@@MainActivity", "Произошла ошибка: ${cause.message}")
     }
     private lateinit var button: Button
     private lateinit var textView: TextView
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
                 supervisorScope{
                     val job1 = launch {
                         delay(2000)
-                        Log.d(null, "Первая корутина завершилась")
+                        Log.d("@@@MainActivity", "Первая корутина завершилась")
                     }
                     val job2 = launch {
                         delay(1000)
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
                     }
                     val job3 = launch {
                         delay(3000)
-                        Log.d(null, "Третья корутина завершилась")
+                        Log.d("@@@MainActivity", "Третья корутина завершилась")
                     }
                     try {
                         job1.join()

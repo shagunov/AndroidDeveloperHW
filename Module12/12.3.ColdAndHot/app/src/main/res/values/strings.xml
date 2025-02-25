@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ColdAndHot</string>
+    <string name="flowstart">FlowStart</string>
+    <string name="sharedflowstart">SharedFlowStart</string>
+    <string name="let_s_get_started">Let\'s get started!</string>
 </resources>
