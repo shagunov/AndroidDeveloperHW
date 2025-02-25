@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
-    private val _counter = MutableSharedFlow<Int>(replay = 2, extraBufferCapacity = 5)
+    private val _counter = MutableSharedFlow<Int>(replay = 0, extraBufferCapacity = 5)
     val counter = _counter.asSharedFlow()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,14 +42,14 @@ class MainActivity : AppCompatActivity() {
         }
 
         lifecycleScope.launch {
-            delay(1500)
+            delay(1501)
             counter.collect{
                 Log.d("@@@Observer", "Второй подписчик получил значение: $it")
             }
         }
 
         lifecycleScope.launch {
-            delay(2500)
+            delay(2501)
             counter.collect{
                 Log.d("@@@Observer", "Третий подписчик получил значение: $it")
             }
