@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
-    private val _counter = MutableSharedFlow<Int>(replay = 0, extraBufferCapacity = 5)
+    private val _counter = MutableSharedFlow<Int>(replay = 2, extraBufferCapacity = 5)
     val counter = _counter.asSharedFlow()
 
     override fun onCreate(savedInstanceState: Bundle?) {
