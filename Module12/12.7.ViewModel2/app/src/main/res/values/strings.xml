@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ViewModel2</string>
+    <string name="load_data">Load Data</string>
+</resources>
