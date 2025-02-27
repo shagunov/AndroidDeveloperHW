@@ -35,10 +35,9 @@ class RepositoryActivity : AppCompatActivity() {
             binding!!.ProductsLV.adapter = it
 
             lifecycleScope.launch {
-                while (true){
-                    viewModel.updateNotify.collect { _ -> it.notifyDataSetChanged() }
+                viewModel.updateNotify.collect { _ -> it.notifyDataSetChanged() }
                 }
-            }
+                    }
         }
 
         with(binding!!.LoadBTN){
