@@ -1,6 +1,7 @@
 package com.example.viewmodel
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.ArrayAdapter
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
@@ -9,7 +10,10 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import com.example.viewmodel.databinding.ActivityRepositoryBinding
+import kotlinx.coroutines.CoroutineExceptionHandler
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class RepositoryActivity : AppCompatActivity() {
 
@@ -27,24 +31,22 @@ class RepositoryActivity : AppCompatActivity() {
             insets
         }
 
-        val adapterList = ArrayAdapter(this, android.R.layout.simple_list_item_1, viewModel.productList)
+        ArrayAdapter(this, android.R.layout.simple_list_item_1, viewModel.productList).also {
+            binding!!.ProductsLV.adapter = it
 
-        binding?.ProductsLV?.let{
-            with(it){
-                adapter = adapterList
+            lifecycleScope.launch {
+                while (true){
+                    viewModel.updateNotify.collect { _ -> it.notifyDataSetChanged() }
+                }
             }
         }
 
-        binding?.LoadBTN?.let {
-            with(it){
-                setOnClickListener {
-                    lifecycleScope.launch {
-                        viewModel.loadProducts()
-                            .collect{
-                                viewModel.productList.add(it)
-                                adapterList.notifyDataSetChanged()
-                            }
-                    }
+        with(binding!!.LoadBTN){
+            setOnClickListener {
+                viewModel.clearList()
+
+                lifecycleScope.launch(Dispatchers.IO) {
+                    viewModel.loadProducts()
                 }
             }
         }

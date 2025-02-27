@@ -29,21 +29,21 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        binding?.plusBTN?.let{
-            it.setOnClickListener {
+        with(binding!!.plusBTN) {
+            setOnClickListener {
                 mainActivityViewModel.incrementCounter()
             }
         }
 
-        binding?.minusBTN?.let{
-            it.setOnClickListener {
+        with(binding!!.minusBTN){
+            setOnClickListener {
                 mainActivityViewModel.decrementCounter()
             }
         }
 
-        binding?.nextBTN?.let{
-            it.setOnClickListener {
-                val intent = Intent(this, RepositoryActivity::class.java)
+        with(binding!!.nextBTN){
+            setOnClickListener {
+                val intent = Intent(this@MainActivity, RepositoryActivity::class.java)
                 startActivity(intent)
             }
         }
