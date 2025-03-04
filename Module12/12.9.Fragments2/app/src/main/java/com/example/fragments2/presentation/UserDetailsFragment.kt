@@ -2,18 +2,25 @@ package com.example.fragments2.presentation
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.MenuProvider
 import androidx.fragment.app.Fragment
-import com.example.fragments2.R
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
+import com.example.fragments2.UserListApplication
+import com.example.fragments2.databinding.FragmentUserDetailsBinding
+import kotlinx.coroutines.launch
 
-/**
- * A simple [Fragment] subclass.
- * Use the [UserDetailsFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class UserDetailsFragment : Fragment() {
-    // TODO: Rename and change types of parameters
+class UserDetailsFragment : Fragment(), MenuProvider {
+
+    private val viewModel: UserDetailsViewModel by viewModels{
+        UserDetailsViewModelFactory(UserListApplication.instance.repository, requireArguments().getInt("userID"))
+    }
+    private var binding: FragmentUserDetailsBinding? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,13 +30,49 @@ class UserDetailsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        binding = FragmentUserDetailsBinding.inflate(inflater, container, false)
+
+        binding?.let{
+
+            lifecycleScope.launch {
+                viewModel.fetchUser()
+                viewModel.userDetailFlow
+                    .collect { user ->
+                        it.nameTextView.text = user?.name
+                        it.lastNameTextView.text = user?.lastName
+                        it.phoneNumberTextView.text = user?.phoneNumber
+                        it.emailTextView.text = user?.email
+                        it.countryTextView.text = user?.country
+                        it.cityTextView.text = user?.city
+                        it.aboutHimselfTextView.text = user?.himself
+                    }
+            }
+        }
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user_details, container, false)
+        return binding?.root
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        binding = null
     }
 
     companion object {
-        // TODO: Rename and change types and number of parameters
         @JvmStatic
-        fun newInstance() = UserDetailsFragment()
+        fun newInstance(id: Int): UserDetailsFragment = UserDetailsFragment().apply{
+            arguments = Bundle().apply {
+                putInt("userID", id)
+            }
+        }
+    }
+
+    override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+        TODO("Not yet implemented")
+    }
+
+    override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
+        TODO("Not yet implemented")
     }
 }

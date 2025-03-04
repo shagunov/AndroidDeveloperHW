@@ -5,56 +5,78 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.widget.doAfterTextChanged
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import com.example.fragments2.R
+import com.example.fragments2.UserListApplication
+import com.example.fragments2.databinding.FragmentUserDetailsBinding
+import com.example.fragments2.databinding.FragmentUserEditBinding
+import com.example.fragments2.model.User
+import com.example.fragments2.model.UserRepository
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.launch
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [UserEditFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class UserEditFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+
+    private var binding: FragmentUserEditBinding? = null
+    private val viewModel: UserEditViewModel by viewModels{
+        UserEditViewModelFactory(UserListApplication.instance.repository, requireArguments().getInt("userID"))
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user_edit, container, false)
+    ): View? {binding = FragmentUserEditBinding.inflate(inflater, container, false)
+
+        binding?.let{ with(it){
+
+            viewModel.userDetailFlow.value?.let { user ->
+                nameEditText.setText(user.name)
+                lastNameEditText.setText(user.lastName)
+                phoneNumberEditText.setText(user.phoneNumber)
+                emailEditText.setText(user.email)
+                countryEditText.setText(user.country)
+                cityEditText.setText(user.city)
+                aboutHimselfEditText.setText(user.himself)
+            }
+
+            nameEditText.doAfterTextChanged { value -> viewModel.userNameChanged(value.toString()) }
+            lastNameEditText.doAfterTextChanged { value -> viewModel.userLastNameChanged(value.toString()) }
+            phoneNumberEditText.doAfterTextChanged { value -> viewModel.userPhoneNumberChanged(value.toString()) }
+            emailEditText.doAfterTextChanged { value -> viewModel.userEmailChanged(value.toString()) }
+            countryEditText.doAfterTextChanged { value -> viewModel.userCountryChanged(value.toString()) }
+            cityEditText.doAfterTextChanged { value -> viewModel.userCityChanged(value.toString()) }
+            aboutHimselfEditText.doAfterTextChanged { value -> viewModel.userHimselfChanged(value.toString()) }
+            dateBirthEditText.doAfterTextChanged { value -> viewModel.userDateBirthChanged(value.toString()) }
+
+            submitButton.setOnClickListener { _ ->
+                lifecycleScope.launch {
+                    viewModel.submitUser()
+                }
+            }
+
+            lifecycleScope.launch {
+                viewModel.fetchUser()
+            }
+        }}
+
+        return binding?.root
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment UserEditFragment.
-         */
-        // TODO: Rename and change types and number of parameters
+
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            UserEditFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+        fun newInstance(id: Int = -1) = UserEditFragment().apply {
+            arguments = Bundle().apply {
+                putInt("userID", id)
             }
+        }
     }
 }

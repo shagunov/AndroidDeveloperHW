@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     kotlin("plugin.serialization") version "2.0.21"
+    //ksp plugin
+    id("com.google.devtools.ksp") version "2.1.0-1.0.29"
 }
 
 android {
@@ -41,8 +43,9 @@ android {
 }
 
 dependencies {
-    implementation(libs.navigation.fragment)
-    implementation(libs.navigation.ui)
+    implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -51,4 +54,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.androidx.navigation.fragment.ktx.v275)
+    implementation(libs.androidx.navigation.ui.ktx.v275)
+    implementation(libs.androidx.navigation.dynamic.features.fragment)
+    androidTestImplementation(libs.androidx.navigation.testing)
+    implementation(libs.androidx.navigation.compose)
+    ksp(libs.androidx.navigation.compose)
 }
