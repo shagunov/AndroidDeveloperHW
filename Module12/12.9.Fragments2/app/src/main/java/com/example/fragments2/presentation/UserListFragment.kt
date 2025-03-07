@@ -12,21 +12,25 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fragments2.R
 import com.example.fragments2.UserListApplication
 import com.example.fragments2.databinding.FragmentUserListBinding
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class UserListFragment : Fragment() {
 
     private var binding: FragmentUserListBinding? = null
-    private val viewModel: UserListViewModel by viewModels{
-        UserListViewModelFactory(UserListApplication.instance.repository)
-    }
+
+
+    private val viewModel: UserListViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         binding = FragmentUserListBinding.inflate(inflater, container, false)
         binding?.let{ bind -> with(bind) {
 
@@ -39,6 +43,10 @@ class UserListFragment : Fragment() {
                 layoutManager = LinearLayoutManager(requireContext())
             }
 
+            addUserButton.setOnClickListener {
+                viewModel.addUser()
+            }
+
             val navigator = findNavController()
 
             lifecycleScope.launch {
@@ -49,16 +57,19 @@ class UserListFragment : Fragment() {
                             //navigate to UserEditFragment with param -1
                             val action = UserListFragmentDirections.actionUserListFragmentToUserEditFragment(-1)
                             navigator.navigate(action)
+                            viewModel.completeNavigation()
                         }
                         is UserListNavEvent.EditUser -> {
                             //navigate to UserEditFragment with param it.position
                             val action = UserListFragmentDirections.actionUserListFragmentToUserEditFragment(it.position)
                             navigator.navigate(action)
+                            viewModel.completeNavigation()
                         }
                         is UserListNavEvent.UserDetails -> {
                             //navigate to UserDetailsFragment with param it.position
                             val action = UserListFragmentDirections.actionUserListFragmentToUserDetailsFragment(it.position)
                             navigator.navigate(action)
+                            viewModel.completeNavigation()
                         }
                         null -> {}
                     }

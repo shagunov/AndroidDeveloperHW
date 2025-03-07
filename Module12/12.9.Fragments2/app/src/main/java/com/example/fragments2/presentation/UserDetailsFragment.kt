@@ -11,20 +11,15 @@ import androidx.core.view.MenuProvider
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
-import com.example.fragments2.UserListApplication
 import com.example.fragments2.databinding.FragmentUserDetailsBinding
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
+@AndroidEntryPoint
 class UserDetailsFragment : Fragment(), MenuProvider {
 
-    private val viewModel: UserDetailsViewModel by viewModels{
-        UserDetailsViewModelFactory(UserListApplication.instance.repository, requireArguments().getInt("userID"))
-    }
+    private val viewModel: UserDetailsViewModel by viewModels()
     private var binding: FragmentUserDetailsBinding? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

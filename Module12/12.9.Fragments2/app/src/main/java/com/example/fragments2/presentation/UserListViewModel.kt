@@ -4,11 +4,17 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.fragments2.model.User
 import com.example.fragments2.model.UserRepository
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
+import javax.inject.Inject
 
-class UserListViewModel(private val repository: UserRepository) : ViewModel() {
+@HiltViewModel
+class UserListViewModel @Inject constructor(
+    private val repository: UserRepository
+): ViewModel() {
+
     private val _userList = MutableStateFlow(emptyList<User>())
     val userList = _userList.asStateFlow()
 
@@ -20,11 +26,7 @@ class UserListViewModel(private val repository: UserRepository) : ViewModel() {
         repository.getUsers().collect{ user -> _userList.update { value -> value + user }}
     }
 
-    fun addUser(user: User){
-        _navigationEvent.tryEmit(UserListNavEvent.NewUser)
-    }
     fun deleteUser(position: Int) {
-
     }
 
     fun editUser(position: Int) {
@@ -34,12 +36,13 @@ class UserListViewModel(private val repository: UserRepository) : ViewModel() {
     fun seeUserDetails(position: Int) {
         _navigationEvent.tryEmit(UserListNavEvent.UserDetails(position))
     }
-}
 
-@Suppress("UNCHECKED_CAST")
-class UserListViewModelFactory(private val repository: UserRepository): ViewModelProvider.Factory {
-    override fun <T: ViewModel> create(modelClass: Class<T>): T {
-        return UserListViewModel(repository) as T
+    fun addUser() {
+        _navigationEvent.tryEmit(UserListNavEvent.NewUser)
+    }
+
+    fun completeNavigation(){
+        _navigationEvent.tryEmit(null)
     }
 }
 

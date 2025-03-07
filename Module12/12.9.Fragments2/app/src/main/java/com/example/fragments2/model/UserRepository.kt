@@ -4,26 +4,29 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class UserRepository {
+@Singleton
+class UserRepository @Inject constructor() {
     private val _users = mutableListOf<User>()
     private val users: List<User> = _users
 
-    suspend fun getUserById(id: Int) : User?{
+    fun getUserById(id: Int) : User?{
         return _users.getOrNull(id)
     }
 
-    suspend fun getUsers() : Flow<User> = flow {
+    fun getUsers() : Flow<User> = flow {
         for(user in users){
             emit(user)
         }
     }.flowOn(Dispatchers.IO)
 
-    suspend fun addUser(user: User){
+    fun addUser(user: User){
         _users.add(user)
     }
 
-    suspend fun updateUser(id: Int, user: User){
+    fun updateUser(id: Int, user: User){
         _users[id] = user
     }
 }

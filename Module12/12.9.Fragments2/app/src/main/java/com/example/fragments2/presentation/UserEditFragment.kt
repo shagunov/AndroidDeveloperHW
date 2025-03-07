@@ -10,34 +10,36 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.example.fragments2.R
 import com.example.fragments2.UserListApplication
 import com.example.fragments2.databinding.FragmentUserDetailsBinding
 import com.example.fragments2.databinding.FragmentUserEditBinding
 import com.example.fragments2.model.User
 import com.example.fragments2.model.UserRepository
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
+@AndroidEntryPoint
 class UserEditFragment : Fragment() {
 
     private var binding: FragmentUserEditBinding? = null
-    private val viewModel: UserEditViewModel by viewModels{
-        UserEditViewModelFactory(UserListApplication.instance.repository, requireArguments().getInt("userID"))
-    }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+    private val args: UserEditFragmentArgs by navArgs()
+
+    private val viewModel: UserEditViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {binding = FragmentUserEditBinding.inflate(inflater, container, false)
+        viewModel.fetchUser()
 
         binding?.let{ with(it){
 
-            viewModel.userDetailFlow.value?.let { user ->
+            viewModel.userDetailFlow.value.let { user ->
                 nameEditText.setText(user.name)
                 lastNameEditText.setText(user.lastName)
                 phoneNumberEditText.setText(user.phoneNumber)
@@ -57,26 +59,16 @@ class UserEditFragment : Fragment() {
             dateBirthEditText.doAfterTextChanged { value -> viewModel.userDateBirthChanged(value.toString()) }
 
             submitButton.setOnClickListener { _ ->
-                lifecycleScope.launch {
-                    viewModel.submitUser()
-                }
+                viewModel.submitUser()
             }
 
             lifecycleScope.launch {
-                viewModel.fetchUser()
+                viewModel.backEvent.collect {
+                    findNavController().popBackStack()
+                }
             }
         }}
 
         return binding?.root
-    }
-
-    companion object {
-
-        @JvmStatic
-        fun newInstance(id: Int = -1) = UserEditFragment().apply {
-            arguments = Bundle().apply {
-                putInt("userID", id)
-            }
-        }
     }
 }
