@@ -16,4 +16,5 @@
     <string name="_7_000_000_00_00">+7(000) 000 - 00 - 00</string>
     <string name="save">Сохранить</string>
     <string name="add_user">Добавить пользователя</string>
+    <string name="nameA">Name</string>
 </resources>

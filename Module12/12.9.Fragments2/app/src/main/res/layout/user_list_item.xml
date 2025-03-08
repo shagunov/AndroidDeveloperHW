@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
         android:id="@+id/avatarImg"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
         android:layout_marginStart="8dp"
         android:src="@drawable/ic_user_avatar"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/userName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/barrier"/>
 
@@ -18,7 +18,7 @@
         android:id="@+id/userName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name"
+        android:text="@string/name"
         android:textStyle="bold"
         android:layout_marginEnd="8dp"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -32,7 +32,7 @@
         android:id="@+id/userEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email"
+        android:text="@string/name_domain_com"
         app:layout_constraintTop_toBottomOf="@id/userName"
         app:layout_constraintStart_toEndOf="@id/userPhone"
         app:layout_constraintEnd_toStartOf="@id/menuButton"
@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
-        android:text="Last Name"
+        android:text="@string/last_name"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/userName"
         app:layout_constraintEnd_toStartOf="@id/menuButton"
@@ -55,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:text="Phone"
+        android:text="@string/_7_000_000_00_00"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintTop_toBottomOf="@id/userName"
         app:layout_constraintStart_toEndOf="@id/avatarImg"
@@ -67,8 +67,8 @@
 
     <ImageButton
         android:id="@+id/menuButton"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/ic_menu"
         app:layout_constraintBottom_toBottomOf="@id/barrier"

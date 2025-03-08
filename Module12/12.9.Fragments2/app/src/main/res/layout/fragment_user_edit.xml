@@ -16,6 +16,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="16dp" />
+
     <ImageView
         android:id="@+id/avatarImg"
         android:layout_width="128dp"
@@ -33,14 +54,13 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="16sp"
         android:layout_marginEnd="8sp"
-        android:layout_marginStart="16sp"
         android:hint="@string/name"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintEnd_toStartOf="@id/lastNameEditText"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@id/avatarImg" />
 
     <EditText
@@ -53,7 +73,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
         app:layout_constraintStart_toEndOf="@id/nameEditText"
         app:layout_constraintTop_toBottomOf="@id/avatarImg" />
 
@@ -63,10 +83,9 @@
         android:layout_height="wrap_content"
         android:textSize="16sp"
         android:layout_marginVertical="8sp"
-        android:layout_marginStart="16sp"
         android:hint="@string/_7_000_000_00_00"
         app:layout_constraintTop_toBottomOf="@id/nameEditText"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft" />
 
     <EditText
         android:id="@+id/emailEditText"
@@ -84,12 +103,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="8sp"
-        android:layout_marginStart="16sp"
         android:hint="@string/_01_01_0001"
         android:textSize="16sp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@id/emailEditText" />
 
     <EditText
@@ -97,7 +115,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="8sp"
-        android:layout_marginStart="16sp"
         android:layout_marginEnd="8sp"
         android:hint="@string/country"
         android:textSize="16sp"
@@ -105,7 +122,7 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintEnd_toStartOf="@id/cityEditText"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@id/dateBirthEditText" />
 
     <EditText
@@ -120,32 +137,26 @@
         app:layout_constraintStart_toEndOf="@id/countryEditText"
         app:layout_constraintTop_toBottomOf="@id/dateBirthEditText" />
 
-    <ScrollView
+    <EditText
+        android:id="@+id/aboutHimselfEditText"
         android:layout_width="0sp"
         android:layout_height="0sp"
-        android:layout_marginVertical="16sp"
-        android:layout_marginHorizontal="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16sp"
+        android:hint="@string/himself_information"
+        android:textSize="16sp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@id/countryEditText"
-        app:layout_constraintBottom_toTopOf="@id/submitButton" >
-        <EditText
-            android:id="@+id/aboutHimselfEditText"
-            android:layout_width="0sp"
-            android:layout_height="0sp"
-            android:hint="@string/himself_information"
-            android:textSize="16sp"/>
-    </ScrollView>
+        app:layout_constraintBottom_toTopOf="@id/submitButton" />
 
     <Button
         android:id="@+id/submitButton"
         android:layout_width="0sp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16sp"
-        android:layout_marginBottom="16sp"
         android:text="@string/save"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

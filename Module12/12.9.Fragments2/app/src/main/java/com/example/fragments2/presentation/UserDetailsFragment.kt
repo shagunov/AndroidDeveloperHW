@@ -16,7 +16,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
-class UserDetailsFragment : Fragment(), MenuProvider {
+class UserDetailsFragment : Fragment() {
 
     private val viewModel: UserDetailsViewModel by viewModels()
     private var binding: FragmentUserDetailsBinding? = null
@@ -31,7 +31,6 @@ class UserDetailsFragment : Fragment(), MenuProvider {
         binding?.let{
 
             lifecycleScope.launch {
-                viewModel.fetchUser()
                 viewModel.userDetailFlow
                     .collect { user ->
                         it.nameTextView.text = user?.name
@@ -52,22 +51,5 @@ class UserDetailsFragment : Fragment(), MenuProvider {
     override fun onDestroy() {
         super.onDestroy()
         binding = null
-    }
-
-    companion object {
-        @JvmStatic
-        fun newInstance(id: Int): UserDetailsFragment = UserDetailsFragment().apply{
-            arguments = Bundle().apply {
-                putInt("userID", id)
-            }
-        }
-    }
-
-    override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
-        TODO("Not yet implemented")
-    }
-
-    override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
-        TODO("Not yet implemented")
     }
 }

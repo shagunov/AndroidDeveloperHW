@@ -4,7 +4,7 @@ plugins {
     kotlin("plugin.serialization") version "2.0.21"
     id("com.google.devtools.ksp") version "2.1.0-1.0.29"
     id("androidx.navigation.safeargs.kotlin") version "2.8.8"
-    id("com.google.dagger.hilt.android") version "2.48"
+    id("com.google.dagger.hilt.android") version "2.55"
 }
 
 buildscript {
@@ -44,9 +44,9 @@ android {
         viewBinding = true
     }
 
-ksp{
-
-}
+    ksp {
+        arg("dagger.hilt.android.internal.disableAndroidSuperclassValidation", "true")
+    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -61,7 +61,36 @@ ksp {
     arg("dagger.hilt.android.internal.disableAndroidSuperclassValidation", "true")
 }
 
+hilt {
+    enableAggregatingTask = false
+}
+
 dependencies {
+    implementation(libs.androidx.room.runtime)
+
+    // If this project uses any Kotlin source, use Kotlin Symbol Processing (KSP)
+    // See Add the KSP plugin to your project
+    ksp(libs.androidx.room.compiler)
+
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation(libs.androidx.room.ktx)
+
+    // optional - RxJava2 support for Room
+    implementation(libs.androidx.room.rxjava2)
+
+    // optional - RxJava3 support for Room
+    implementation(libs.androidx.room.rxjava3)
+
+    // optional - Guava support for Room, including Optional and ListenableFuture
+    implementation(libs.androidx.room.guava)
+
+    // optional - Test helpers
+    testImplementation(libs.androidx.room.testing)
+
+    // optional - Paging 3 Integration
+    implementation(libs.androidx.room.paging)
+
+
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
     // Для тестирования (необязательно)

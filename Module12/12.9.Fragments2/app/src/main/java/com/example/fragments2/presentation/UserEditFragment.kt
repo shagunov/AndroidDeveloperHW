@@ -20,14 +20,14 @@ import com.example.fragments2.model.User
 import com.example.fragments2.model.UserRepository
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.flow.last
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class UserEditFragment : Fragment() {
 
     private var binding: FragmentUserEditBinding? = null
-
-    private val args: UserEditFragmentArgs by navArgs()
 
     private val viewModel: UserEditViewModel by viewModels()
 
@@ -35,18 +35,20 @@ class UserEditFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {binding = FragmentUserEditBinding.inflate(inflater, container, false)
-        viewModel.fetchUser()
 
         binding?.let{ with(it){
 
-            viewModel.userDetailFlow.value.let { user ->
-                nameEditText.setText(user.name)
-                lastNameEditText.setText(user.lastName)
-                phoneNumberEditText.setText(user.phoneNumber)
-                emailEditText.setText(user.email)
-                countryEditText.setText(user.country)
-                cityEditText.setText(user.city)
-                aboutHimselfEditText.setText(user.himself)
+            lifecycleScope.launch{
+                viewModel.fetchJob.join()
+                viewModel.userFormState.value.apply {
+                    nameEditText.setText(name)
+                    lastNameEditText.setText(lastName)
+                    phoneNumberEditText.setText(phoneNumber)
+                    emailEditText.setText(email)
+                    countryEditText.setText(country)
+                    cityEditText.setText(city)
+                    aboutHimselfEditText.setText(himself)
+                }
             }
 
             nameEditText.doAfterTextChanged { value -> viewModel.userNameChanged(value.toString()) }
@@ -56,7 +58,6 @@ class UserEditFragment : Fragment() {
             countryEditText.doAfterTextChanged { value -> viewModel.userCountryChanged(value.toString()) }
             cityEditText.doAfterTextChanged { value -> viewModel.userCityChanged(value.toString()) }
             aboutHimselfEditText.doAfterTextChanged { value -> viewModel.userHimselfChanged(value.toString()) }
-            dateBirthEditText.doAfterTextChanged { value -> viewModel.userDateBirthChanged(value.toString()) }
 
             submitButton.setOnClickListener { _ ->
                 viewModel.submitUser()

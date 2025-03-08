@@ -8,25 +8,31 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class UserRepository @Inject constructor() {
-    private val _users = mutableListOf<User>()
-    private val users: List<User> = _users
+class UserRepository @Inject constructor(
+    private val userDao: UserDao
+) {
 
     fun getUserById(id: Int) : User?{
-        return _users.getOrNull(id)
+        return userDao.getById(id)
     }
 
-    fun getUsers() : Flow<User> = flow {
-        for(user in users){
-            emit(user)
-        }
-    }.flowOn(Dispatchers.IO)
+    fun getUsers() : List<User> {
+        return userDao.getAll()
+    }
 
     fun addUser(user: User){
-        _users.add(user)
+        userDao.insertAll(user)
     }
 
-    fun updateUser(id: Int, user: User){
-        _users[id] = user
+    fun updateUser(user: User){
+        userDao.updateUser(user)
+    }
+
+    fun deleteUser(id: Int){
+        userDao.delete(getUserById(id)!!)
+    }
+
+    fun deleteAll(){
+        userDao.deleteAll()
     }
 }
