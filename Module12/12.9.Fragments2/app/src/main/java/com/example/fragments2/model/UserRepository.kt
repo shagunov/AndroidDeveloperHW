@@ -31,8 +31,4 @@ class UserRepository @Inject constructor(
     fun deleteUser(id: Int){
         userDao.delete(getUserById(id)!!)
     }
-
-    fun deleteAll(){
-        userDao.deleteAll()
-    }
 }
