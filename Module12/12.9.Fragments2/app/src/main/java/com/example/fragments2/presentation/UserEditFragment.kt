@@ -5,24 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
 import com.example.fragments2.R
-import com.example.fragments2.UserListApplication
-import com.example.fragments2.databinding.FragmentUserDetailsBinding
 import com.example.fragments2.databinding.FragmentUserEditBinding
-import com.example.fragments2.model.User
-import com.example.fragments2.model.UserRepository
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.flow.collectLatest
-import kotlinx.coroutines.flow.last
 import kotlinx.coroutines.launch
-import javax.inject.Inject
+import kotlin.properties.ReadWriteProperty
+import kotlin.reflect.KProperty
 
 @AndroidEntryPoint
 class UserEditFragment : Fragment() {
@@ -34,38 +29,77 @@ class UserEditFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {binding = FragmentUserEditBinding.inflate(inflater, container, false)
+    ): View? {
+        binding = FragmentUserEditBinding.inflate(inflater, container, false)
 
         binding?.let{ with(it){
 
-            lifecycleScope.launch{
-                viewModel.fetchJob.join()
-                viewModel.userFormState.value.apply {
-                    nameEditText.setText(name)
-                    lastNameEditText.setText(lastName)
-                    phoneNumberEditText.setText(phoneNumber)
-                    emailEditText.setText(email)
-                    countryEditText.setText(country)
-                    cityEditText.setText(city)
-                    aboutHimselfEditText.setText(himself)
-                }
-            }
+            // binding editTexts
+            nameEditText.doAfterTextChanged { text -> viewModel.userNameChanged(text.toString()) }
+            lastNameEditText.doAfterTextChanged { text -> viewModel.userLastNameChanged(text.toString()) }
+            phoneNumberEditText.doAfterTextChanged { text -> viewModel.userPhoneNumberChanged(text.toString()) }
+            emailEditText.doAfterTextChanged { text -> viewModel.userEmailChanged(text.toString()) }
+            countryEditText.doAfterTextChanged { text -> viewModel.userCountryChanged(text.toString()) }
+            cityEditText.doAfterTextChanged { text -> viewModel.userCityChanged(text.toString()) }
+            aboutHimselfEditText.doAfterTextChanged { text -> viewModel.userHimselfChanged(text.toString()) }
 
-            nameEditText.doAfterTextChanged { value -> viewModel.userNameChanged(value.toString()) }
-            lastNameEditText.doAfterTextChanged { value -> viewModel.userLastNameChanged(value.toString()) }
-            phoneNumberEditText.doAfterTextChanged { value -> viewModel.userPhoneNumberChanged(value.toString()) }
-            emailEditText.doAfterTextChanged { value -> viewModel.userEmailChanged(value.toString()) }
-            countryEditText.doAfterTextChanged { value -> viewModel.userCountryChanged(value.toString()) }
-            cityEditText.doAfterTextChanged { value -> viewModel.userCityChanged(value.toString()) }
-            aboutHimselfEditText.doAfterTextChanged { value -> viewModel.userHimselfChanged(value.toString()) }
+            // this button is used to submit user data
+            submitButton.setOnClickListener { viewModel.submitUser() }
+            //set submit button disabled by default
+            submitButton.isEnabled = false
 
-            submitButton.setOnClickListener { _ ->
-                viewModel.submitUser()
-            }
-
+            // back button
             lifecycleScope.launch {
                 viewModel.backEvent.collect {
                     findNavController().popBackStack()
+                }
+            }
+
+            // reading values from viewmodel
+            lifecycleScope.launch {
+                viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                    viewModel.userFormState.collect { value -> value.apply {
+                        if (nameEditText.text.toString() != name) nameEditText.setText(name)
+                        if (lastNameEditText.text.toString() != lastName) lastNameEditText.setText(lastName)
+                        if (phoneNumberEditText.text.toString() != phoneNumber) phoneNumberEditText.setText(phoneNumber)
+                        if (emailEditText.text.toString() != email) emailEditText.setText(email)
+                        if (countryEditText.text.toString() != country) countryEditText.setText(country)
+                        if (cityEditText.text.toString() != city) cityEditText.setText(city)
+                        if (aboutHimselfEditText.text.toString() != himself) aboutHimselfEditText.setText(himself)
+                    }}
+                }
+            }
+
+            // validation
+            lifecycleScope.launch {
+                viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                    viewModel.validationStatus.collect { value -> value.apply {
+                        nameEditText.error = (name as? TextValidationStatus.Invalid)?.description
+                        lastNameEditText.error = (name as? TextValidationStatus.Invalid)?.description
+                        phoneNumberEditText.error = (phoneNumber as? TextValidationStatus.Invalid)?.description
+                        emailEditText.error = (email as? TextValidationStatus.Invalid)?.description
+                        countryEditText.error = (country as? TextValidationStatus.Invalid)?.description
+                        cityEditText.error = (city as? TextValidationStatus.Invalid)?.description
+                        aboutHimselfEditText.error = (himself as? TextValidationStatus.Invalid)?.description
+
+                        // name couldn't be empty
+                        nameEditText.error = if (name is TextValidationStatus.Empty) getText(R.string.edittext_empty_error) else null
+                        lastNameEditText.error = if (lastName is TextValidationStatus.Empty) getText(R.string.edittext_empty_error) else null
+                        phoneNumberEditText.error = if (phoneNumber is TextValidationStatus.Empty) getText(R.string.edittext_empty_error) else null
+                        emailEditText.error = if (email is TextValidationStatus.Empty) getText(R.string.edittext_empty_error) else null
+                        countryEditText.error = if (country is TextValidationStatus.Empty) getText(R.string.edittext_empty_error) else null
+                        cityEditText.error = if (city is TextValidationStatus.Empty) getText(R.string.edittext_empty_error) else null
+                        aboutHimselfEditText.error = if (himself is TextValidationStatus.Empty) getText(R.string.edittext_empty_error) else null
+
+                        // if all fields are valid, submit button is enabled
+                        submitButton.isEnabled = name is TextValidationStatus.Valid &&
+                                lastName is TextValidationStatus.Valid &&
+                                phoneNumber is TextValidationStatus.Valid &&
+                                email is TextValidationStatus.Valid &&
+                                country is TextValidationStatus.Valid &&
+                                city is TextValidationStatus.Valid &&
+                                himself is TextValidationStatus.Valid
+                    }}
                 }
             }
         }}

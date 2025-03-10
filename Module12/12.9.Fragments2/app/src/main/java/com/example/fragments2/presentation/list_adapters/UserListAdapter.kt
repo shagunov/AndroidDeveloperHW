@@ -25,17 +25,17 @@ class UserListAdapter(
         with(holder.binding){
 
             menuButton.setOnClickListener{
-                onMenuInvocationListener(getItem(position), menuButton)
+                onMenuInvocationListener(currentList[position], menuButton)
             }
 
             root.setOnClickListener{
-                onItemClickListener(getItem(position), root)
+                onItemClickListener(currentList[position], root)
             }
 
-            userName.text = getItem(position).name
-            userLastName.text = getItem(position).lastName
-            userPhone.text = getItem(position).phoneNumber
-            userEmail.text = getItem(position).email
+            userName.text = currentList[position].name
+            userLastName.text = currentList[position].lastName
+            userPhone.text = currentList[position].phoneNumber
+            userEmail.text = currentList[position].email
         }
     }
 }

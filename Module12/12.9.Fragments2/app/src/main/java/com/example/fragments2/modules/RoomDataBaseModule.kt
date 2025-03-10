@@ -25,6 +25,7 @@ class RoomDataBaseModule {
             .fallbackToDestructiveMigration()
             .build()
 
+    @Singleton
     @Provides
     fun provideUserDao(userDB: UserDB) = userDB.userDao()
 }

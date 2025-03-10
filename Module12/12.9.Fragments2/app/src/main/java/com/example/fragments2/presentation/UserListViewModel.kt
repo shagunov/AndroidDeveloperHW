@@ -24,7 +24,6 @@ class UserListViewModel @Inject constructor(
     val userList = _userList.asStateFlow()
 
     init {
-
         viewModelScope.launch(Dispatchers.IO) {
             while(true){
                 _userList.update { repository.getUsers() }

@@ -71,7 +71,8 @@ class UserListFragment : Fragment() {
 
             lifecycleScope.launch {
                 viewModel.userList.collectLatest {
-                    adapterDiffUtil.submitList(it) }
+                    adapterDiffUtil.submitList(it)
+                }
             }
 
             lifecycleScope.launch {
